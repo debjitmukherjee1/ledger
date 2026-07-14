@@ -1,5 +1,5 @@
 {
-  "updated_at": "14 Jul 2026 08:21 UTC",
+  "updated_at": "14 Jul 2026 08:38 UTC",
   "calls": [
     {
       "company": "Tata Consultancy Services",
@@ -14,12 +14,12 @@
       "currency": "INR",
       "report_url": "",
       "status": "open",
-      "live_price": 2194.4,
+      "live_price": 2191.9,
       "as_of": "2026-07-14",
-      "return_pct": -0.21,
-      "benchmark_return_pct": -0.44,
-      "alpha": 0.23,
-      "target_distance_pct": 14.02,
+      "return_pct": -0.32,
+      "benchmark_return_pct": -0.43,
+      "alpha": 0.11,
+      "target_distance_pct": 14.15,
       "hit": null,
       "series": [
         {
@@ -96,7 +96,7 @@
         },
         {
           "d": "2026-07-14",
-          "c": 2194.4
+          "c": 2191.9
         }
       ],
       "source": "live"
@@ -114,12 +114,12 @@
       "currency": "INR",
       "report_url": "",
       "status": "open",
-      "live_price": 809.6,
+      "live_price": 810.75,
       "as_of": "2026-07-14",
-      "return_pct": 3.15,
-      "benchmark_return_pct": 0.02,
-      "alpha": 3.13,
-      "target_distance_pct": -8.97,
+      "return_pct": 3.29,
+      "benchmark_return_pct": 0.03,
+      "alpha": 3.26,
+      "target_distance_pct": -9.1,
       "hit": null,
       "series": [
         {
@@ -176,7 +176,7 @@
         },
         {
           "d": "2026-07-14",
-          "c": 809.6
+          "c": 810.75
         }
       ],
       "source": "live"
@@ -418,12 +418,12 @@
       "currency": "INR",
       "report_url": "",
       "status": "open",
-      "live_price": 1093.4,
+      "live_price": 1093.8,
       "as_of": "2026-07-14",
-      "return_pct": 5.04,
-      "benchmark_return_pct": -0.47,
-      "alpha": 5.51,
-      "target_distance_pct": 8.83,
+      "return_pct": 5.08,
+      "benchmark_return_pct": -0.46,
+      "alpha": 5.54,
+      "target_distance_pct": 8.8,
       "hit": null,
       "series": [
         {
@@ -460,7 +460,7 @@
         },
         {
           "d": "2026-07-14",
-          "c": 1093.4
+          "c": 1093.8
         }
       ],
       "source": "live"
@@ -678,12 +678,12 @@
       "currency": "INR",
       "report_url": "",
       "status": "open",
-      "live_price": 1403.3,
+      "live_price": 1405.7,
       "as_of": "2026-07-14",
-      "return_pct": -0.55,
-      "benchmark_return_pct": -1.51,
-      "alpha": 0.96,
-      "target_distance_pct": -14.56,
+      "return_pct": -0.38,
+      "benchmark_return_pct": -1.5,
+      "alpha": 1.12,
+      "target_distance_pct": -14.7,
       "hit": null,
       "series": [
         {
@@ -712,7 +712,7 @@
         },
         {
           "d": "2026-07-14",
-          "c": 1403.3
+          "c": 1405.7
         }
       ],
       "source": "live"
