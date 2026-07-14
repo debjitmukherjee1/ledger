@@ -96,5 +96,61 @@
     "currency": "USD",
     "report_url": "",
     "status": "open"
+  },
+  {
+    "company": "Alphabet",
+    "ticker": "GOOGL",
+    "yahoo_symbol": "GOOGL",
+    "market": "US",
+    "benchmark": "S&P 500",
+    "call_date": "2026-06-30",
+    "rating": "BUY",
+    "price_at_call": 357,
+    "target": 390,
+    "currency": "USD",
+    "report_url": "",
+    "status": "open"
+  },
+  {
+    "company": "Visa",
+    "ticker": "V",
+    "yahoo_symbol": "V",
+    "market": "US",
+    "benchmark": "S&P 500",
+    "call_date": "2026-06-15",
+    "rating": "BUY",
+    "price_at_call": 324.62,
+    "target": 373,
+    "currency": "USD",
+    "report_url": "",
+    "status": "open"
+  },
+  {
+    "company": "Coca-Cola",
+    "ticker": "KO",
+    "yahoo_symbol": "KO",
+    "market": "US",
+    "benchmark": "S&P 500",
+    "call_date": "2026-06-30",
+    "rating": "ACCUMULATE",
+    "price_at_call": 81.3,
+    "target": 87,
+    "currency": "USD",
+    "report_url": "",
+    "status": "open"
+  },
+  {
+    "company": "Hindustan Unilever",
+    "ticker": "HINDUNILVR",
+    "yahoo_symbol": "HINDUNILVR.NS",
+    "market": "India",
+    "benchmark": "Nifty 50",
+    "call_date": "2026-07-14",
+    "rating": "HOLD",
+    "price_at_call": 2130.60,
+    "target": 2190,
+    "currency": "INR",
+    "report_url": "",
+    "status": "open"
   }
 ]
