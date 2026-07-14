@@ -1,0 +1,16 @@
+[
+  {
+    "company": "Amazon",
+    "ticker": "AMZN",
+    "yahoo_symbol": "AMZN",
+    "market": "US",
+    "benchmark": "S&P 500",
+    "call_date": "2026-07-09",
+    "rating": "BUY",
+    "price_at_call": 247,
+    "target": 275,
+    "currency": "USD",
+    "report_url": "",
+    "status": "open"
+  }
+]
