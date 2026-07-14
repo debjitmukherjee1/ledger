@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ledger — A Public Track Record</title>
+  <meta name="description" content="Every research call I've published, tracked daily against its live price and benchmark: return since call, alpha, distance to target, and hit rate on closed calls. Winners and losers alike." />
+  <meta property="og:title" content="Ledger — A Public Track Record" />
+  <meta property="og:description" content="Every research call I've published, tracked daily against its live price and benchmark. Honesty is the product." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://debjitmukherjee1.github.io/ledger/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Ledger — A Public Track Record" />
+  <meta name="twitter:description" content="Every research call I've published, tracked daily against its live price and benchmark. Honesty is the product." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <svg class="monogram" viewBox="0 0 48 48" width="46" height="46" aria-hidden="true">
+        <circle cx="24" cy="24" r="22" fill="var(--surface)" stroke="var(--accent)" stroke-width="1.5" />
+        <path d="M14 17h20M14 24h20M14 31h13" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" />
+      </svg>
+      <div class="brand-text">
+        <h1>Led<span class="pulse">ger</span></h1>
+        <p class="tagline">A public, self-updating track record of every call I've published.</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <div class="updated">Last updated <span id="updated-at">—</span></div>
+      <div class="run-note">refreshed daily via <code>GitHub Actions</code> · no server</div>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <span class="tab-indicator" id="tab-indicator"></span>
+    <button class="tab active" id="tab-btn-record" data-tab="record" role="tab" aria-selected="true" aria-controls="record">Track Record</button>
+    <button class="tab" id="tab-btn-methodology" data-tab="methodology" role="tab" aria-selected="false" aria-controls="methodology">Methodology</button>
+  </nav>
+
+  <main>
+    <!-- TRACK RECORD -->
+    <section id="record" class="panel active" role="tabpanel" aria-labelledby="tab-btn-record">
+      <h2>Track Record</h2>
+      <hr class="rule" />
+      <p class="muted">Every rating tracked daily against its live price and benchmark — Nifty 50 for India names, S&amp;P 500 for US names. Losers are shown as prominently as winners. That's the point.</p>
+
+      <p class="disclaimer">⚠ Personal, educational research tool. Not investment advice, not a solicitation, and I am not a SEBI-registered investment adviser. Returns shown are <strong>price returns only</strong> — dividends are excluded (dividend-agnostic) — and reflect an unofficial, once-daily data source. Nothing here should be the basis for a trading decision.</p>
+
+      <div class="stat-row" id="summary-stats"></div>
+
+      <div class="filter-row">
+        <div class="filter-toggle" id="status-filter">
+          <button data-status="all" class="active">All calls</button>
+          <button data-status="open">Open</button>
+          <button data-status="closed">Closed</button>
+        </div>
+        <div class="filter-toggle" id="market-filter">
+          <button data-market="all" class="active">All markets</button>
+          <button data-market="India">India</button>
+          <button data-market="US">US</button>
+        </div>
+      </div>
+
+      <div class="table-scroll">
+        <table class="calls-table" id="calls-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Rating</th>
+              <th>Call date</th>
+              <th>Price at call</th>
+              <th>Target</th>
+              <th>Live price</th>
+              <th>Return</th>
+              <th>Alpha</th>
+              <th>To target</th>
+              <th>Since call</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="calls-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- METHODOLOGY -->
+    <section id="methodology" class="panel" role="tabpanel" aria-labelledby="tab-btn-methodology">
+      <h2>How Ledger works</h2>
+      <hr class="rule" />
+      <p>Ledger reads a hand-maintained <code>calls.json</code> — one entry per published rating, each tracing back to an actual report — and a daily Python job fills in the rest:</p>
+      <ol>
+        <li><strong>Return since call</strong> — <code>(live_price / price_at_call − 1) × 100</code>. This is a <strong>price return</strong>: dividends are excluded, so income-paying names (HDFC Bank, Coca-Cola, Visa…) will understate total return versus what a holder actually earned.</li>
+        <li><strong>Alpha</strong> — the call's return since call date, minus its benchmark's return over the identical window. India calls are measured in INR against the Nifty 50; US calls in USD against the S&amp;P 500 — never mixed across currencies.</li>
+        <li><strong>Distance to target</strong> — <code>(target / live_price − 1) × 100</code>. Positive means the target is still above the live price; negative means the live price has moved past it.</li>
+        <li><strong>Hit / miss (closed calls only)</strong> — a call closes when a later report revises it (e.g. Infosys HOLD → ACCUMULATE, ICICI HOLD → REDUCE). Its window runs from its own call date to the date of the revision, using the revision's price as the closing price. It's marked a <strong>hit</strong> if the price ever crossed the target during that window (reached it on the way up for an upside thesis, or fell to it for a downside/fair-value thesis) — otherwise a <strong>miss</strong>.</li>
+      </ol>
+      <p class="muted small">Where a call was revised, both the closed original and the open revision are kept — nothing is deleted from the record. The summary header's hit rate, average alpha, and best/worst call are computed across every row shown here, open and closed alike.</p>
+      <p class="disclaimer">⚠ Personal, educational research tool. Prices refresh once daily from an unofficial free endpoint, not in real time. Past calls are not a guarantee of future ones. <strong>Not investment advice, not a solicitation, not SEBI-registered research.</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ledger · built by Debjit Mukherjee · <a href="https://github.com/debjitmukherjee1/ledger" target="_blank" rel="noopener">Source on GitHub</a><br>
+    Data: Yahoo Finance (no key) · Hosting: GitHub Pages · No server, no per-visitor cost.</p>
+    <p class="sibling-links">Also in this suite:
+      <a href="https://debjitmukherjee1.github.io/meridian/" target="_blank" rel="noopener">Meridian</a> ·
+      <a href="https://debjitmukherjee1.github.io/marketpulse/" target="_blank" rel="noopener">MarketPulse</a>
+    </p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
