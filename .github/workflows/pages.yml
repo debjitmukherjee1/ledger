@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_run:
+    workflows: ["Daily calls refresh"]
+    types: [completed]
   workflow_dispatch: {}
 
 permissions:
@@ -16,6 +19,12 @@ concurrency:
 
 jobs:
   deploy:
+    # The daily refresh commits via GITHUB_TOKEN, and GitHub deliberately does
+    # not let GITHUB_TOKEN-authored pushes trigger other workflows (anti-
+    # recursion safeguard) — so the `push` trigger above never fires for that
+    # bot commit. The `workflow_run` trigger is what actually redeploys the
+    # site after each daily refresh; only do so if that refresh succeeded.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
