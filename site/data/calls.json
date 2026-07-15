@@ -1,5 +1,5 @@
 {
-  "updated_at": "14 Jul 2026 08:38 UTC",
+  "updated_at": "15 Jul 2026 07:29 UTC",
   "calls": [
     {
       "company": "Tata Consultancy Services",
@@ -14,12 +14,12 @@
       "currency": "INR",
       "report_url": "",
       "status": "open",
-      "live_price": 2191.9,
-      "as_of": "2026-07-14",
-      "return_pct": -0.32,
-      "benchmark_return_pct": -0.43,
-      "alpha": 0.11,
-      "target_distance_pct": 14.15,
+      "live_price": 2178.3,
+      "as_of": "2026-07-15",
+      "return_pct": -0.94,
+      "benchmark_return_pct": -0.48,
+      "alpha": -0.46,
+      "target_distance_pct": 14.86,
       "hit": null,
       "series": [
         {
@@ -96,7 +96,11 @@
         },
         {
           "d": "2026-07-14",
-          "c": 2191.9
+          "c": 2200.6
+        },
+        {
+          "d": "2026-07-15",
+          "c": 2178.3
         }
       ],
       "source": "live"
@@ -114,12 +118,12 @@
       "currency": "INR",
       "report_url": "",
       "status": "open",
-      "live_price": 810.75,
-      "as_of": "2026-07-14",
-      "return_pct": 3.29,
-      "benchmark_return_pct": 0.03,
-      "alpha": 3.26,
-      "target_distance_pct": -9.1,
+      "live_price": 811.95,
+      "as_of": "2026-07-15",
+      "return_pct": 3.45,
+      "benchmark_return_pct": -0.02,
+      "alpha": 3.47,
+      "target_distance_pct": -9.23,
       "hit": null,
       "series": [
         {
@@ -176,7 +180,11 @@
         },
         {
           "d": "2026-07-14",
-          "c": 810.75
+          "c": 809.4
+        },
+        {
+          "d": "2026-07-15",
+          "c": 811.95
         }
       ],
       "source": "live"
@@ -418,12 +426,12 @@
       "currency": "INR",
       "report_url": "",
       "status": "open",
-      "live_price": 1093.8,
-      "as_of": "2026-07-14",
-      "return_pct": 5.08,
-      "benchmark_return_pct": -0.46,
-      "alpha": 5.54,
-      "target_distance_pct": 8.8,
+      "live_price": 1074.2,
+      "as_of": "2026-07-15",
+      "return_pct": 3.2,
+      "benchmark_return_pct": -0.52,
+      "alpha": 3.72,
+      "target_distance_pct": 10.78,
       "hit": null,
       "series": [
         {
@@ -460,7 +468,11 @@
         },
         {
           "d": "2026-07-14",
-          "c": 1093.8
+          "c": 1092.9
+        },
+        {
+          "d": "2026-07-15",
+          "c": 1074.2
         }
       ],
       "source": "live"
@@ -678,12 +690,12 @@
       "currency": "INR",
       "report_url": "",
       "status": "open",
-      "live_price": 1405.7,
-      "as_of": "2026-07-14",
-      "return_pct": -0.38,
-      "benchmark_return_pct": -1.5,
-      "alpha": 1.12,
-      "target_distance_pct": -14.7,
+      "live_price": 1413.1,
+      "as_of": "2026-07-15",
+      "return_pct": 0.15,
+      "benchmark_return_pct": -1.55,
+      "alpha": 1.7,
+      "target_distance_pct": -15.15,
       "hit": null,
       "series": [
         {
@@ -711,8 +723,8 @@
           "c": 1409.5
         },
         {
-          "d": "2026-07-14",
-          "c": 1405.7
+          "d": "2026-07-15",
+          "c": 1413.1
         }
       ],
       "source": "live"
@@ -731,7 +743,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 247.31,
-      "as_of": "2026-07-14",
+      "as_of": "2026-07-15",
       "return_pct": 0.13,
       "benchmark_return_pct": -0.38,
       "alpha": 0.51,
@@ -749,6 +761,258 @@
         {
           "d": "2026-07-13",
           "c": 247.31
+        }
+      ],
+      "source": "live"
+    },
+    {
+      "company": "Alphabet",
+      "ticker": "GOOGL",
+      "yahoo_symbol": "GOOGL",
+      "market": "US",
+      "benchmark": "S&P 500",
+      "call_date": "2026-06-30",
+      "rating": "BUY",
+      "price_at_call": 357,
+      "target": 390,
+      "currency": "USD",
+      "report_url": "",
+      "status": "open",
+      "live_price": 352.51,
+      "as_of": "2026-07-15",
+      "return_pct": -1.26,
+      "benchmark_return_pct": 0.21,
+      "alpha": -1.47,
+      "target_distance_pct": 10.64,
+      "hit": null,
+      "series": [
+        {
+          "d": "2026-06-30",
+          "c": 357.37
+        },
+        {
+          "d": "2026-07-01",
+          "c": 361.21
+        },
+        {
+          "d": "2026-07-02",
+          "c": 359.91
+        },
+        {
+          "d": "2026-07-06",
+          "c": 366.46
+        },
+        {
+          "d": "2026-07-07",
+          "c": 367.03
+        },
+        {
+          "d": "2026-07-08",
+          "c": 361.92
+        },
+        {
+          "d": "2026-07-09",
+          "c": 358.89
+        },
+        {
+          "d": "2026-07-10",
+          "c": 357.18
+        },
+        {
+          "d": "2026-07-13",
+          "c": 352.51
+        }
+      ],
+      "source": "live"
+    },
+    {
+      "company": "Visa",
+      "ticker": "V",
+      "yahoo_symbol": "V",
+      "market": "US",
+      "benchmark": "S&P 500",
+      "call_date": "2026-06-15",
+      "rating": "BUY",
+      "price_at_call": 324.62,
+      "target": 373,
+      "currency": "USD",
+      "report_url": "",
+      "status": "open",
+      "live_price": 357.75,
+      "as_of": "2026-07-15",
+      "return_pct": 10.21,
+      "benchmark_return_pct": -0.52,
+      "alpha": 10.73,
+      "target_distance_pct": 4.26,
+      "hit": null,
+      "series": [
+        {
+          "d": "2026-06-15",
+          "c": 323.82
+        },
+        {
+          "d": "2026-06-16",
+          "c": 333.12
+        },
+        {
+          "d": "2026-06-17",
+          "c": 330.38
+        },
+        {
+          "d": "2026-06-18",
+          "c": 327.24
+        },
+        {
+          "d": "2026-06-22",
+          "c": 326.6
+        },
+        {
+          "d": "2026-06-23",
+          "c": 328.48
+        },
+        {
+          "d": "2026-06-24",
+          "c": 332.23
+        },
+        {
+          "d": "2026-06-25",
+          "c": 330.52
+        },
+        {
+          "d": "2026-06-26",
+          "c": 336.23
+        },
+        {
+          "d": "2026-06-29",
+          "c": 341.65
+        },
+        {
+          "d": "2026-06-30",
+          "c": 343.09
+        },
+        {
+          "d": "2026-07-01",
+          "c": 351.08
+        },
+        {
+          "d": "2026-07-02",
+          "c": 362.13
+        },
+        {
+          "d": "2026-07-06",
+          "c": 357.25
+        },
+        {
+          "d": "2026-07-07",
+          "c": 352.2
+        },
+        {
+          "d": "2026-07-08",
+          "c": 347.53
+        },
+        {
+          "d": "2026-07-09",
+          "c": 348.2
+        },
+        {
+          "d": "2026-07-10",
+          "c": 348.97
+        },
+        {
+          "d": "2026-07-13",
+          "c": 357.75
+        }
+      ],
+      "source": "live"
+    },
+    {
+      "company": "Coca-Cola",
+      "ticker": "KO",
+      "yahoo_symbol": "KO",
+      "market": "US",
+      "benchmark": "S&P 500",
+      "call_date": "2026-06-30",
+      "rating": "ACCUMULATE",
+      "price_at_call": 81.3,
+      "target": 87,
+      "currency": "USD",
+      "report_url": "",
+      "status": "open",
+      "live_price": 84.25,
+      "as_of": "2026-07-15",
+      "return_pct": 3.63,
+      "benchmark_return_pct": 0.21,
+      "alpha": 3.42,
+      "target_distance_pct": 3.26,
+      "hit": null,
+      "series": [
+        {
+          "d": "2026-06-30",
+          "c": 81.27
+        },
+        {
+          "d": "2026-07-01",
+          "c": 81.29
+        },
+        {
+          "d": "2026-07-02",
+          "c": 84.14
+        },
+        {
+          "d": "2026-07-06",
+          "c": 82.96
+        },
+        {
+          "d": "2026-07-07",
+          "c": 84.05
+        },
+        {
+          "d": "2026-07-08",
+          "c": 83.4
+        },
+        {
+          "d": "2026-07-09",
+          "c": 82.63
+        },
+        {
+          "d": "2026-07-10",
+          "c": 83.49
+        },
+        {
+          "d": "2026-07-13",
+          "c": 84.25
+        }
+      ],
+      "source": "live"
+    },
+    {
+      "company": "Hindustan Unilever",
+      "ticker": "HINDUNILVR",
+      "yahoo_symbol": "HINDUNILVR.NS",
+      "market": "India",
+      "benchmark": "Nifty 50",
+      "call_date": "2026-07-14",
+      "rating": "HOLD",
+      "price_at_call": 2130.6,
+      "target": 2190,
+      "currency": "INR",
+      "report_url": "",
+      "status": "open",
+      "live_price": 2094.5,
+      "as_of": "2026-07-15",
+      "return_pct": -1.69,
+      "benchmark_return_pct": -0.65,
+      "alpha": -1.04,
+      "target_distance_pct": 4.56,
+      "hit": null,
+      "series": [
+        {
+          "d": "2026-07-14",
+          "c": 2120.2
+        },
+        {
+          "d": "2026-07-15",
+          "c": 2094.5
         }
       ],
       "source": "live"
