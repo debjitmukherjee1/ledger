@@ -40,7 +40,11 @@ def load_manual_events():
     A missing file, a ticker not listed, or a still-blank seed placeholder
     ("YYYY-MM-DD") all just mean "no manual override" -- skipped, never a
     hard error, so an unfilled seed entry can't take down the daily run.
-    Keys starting with "_" (e.g. "_readme") are ignored.
+    Keys starting with "_" (e.g. "_readme") are ignored. "as_of" is
+    validated the same way as "date": a maintainer who fills in a real date
+    but forgets to also replace the seeded "YYYY-MM-DD" placeholder for
+    as_of gets None back for it (renders as "--"), not the literal
+    placeholder string shown to site visitors as if it were a real date.
     """
     if not os.path.exists(MANUAL_EVENTS_FILE):
         return {}
@@ -55,5 +59,10 @@ def load_manual_events():
             date.fromisoformat(date_str)
         except (ValueError, TypeError):
             continue
-        out[symbol] = {"date": date_str, "as_of": entry.get("as_of") or None}
+        as_of = entry.get("as_of")
+        try:
+            date.fromisoformat(as_of)
+        except (ValueError, TypeError):
+            as_of = None
+        out[symbol] = {"date": date_str, "as_of": as_of}
     return out
