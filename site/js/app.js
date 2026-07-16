@@ -19,10 +19,13 @@ async function boot() {
     document.getElementById("updated-at").textContent = summary.updated_at || "—";
     renderSummary();
     renderTable();
+    renderEventsStrip();
   } catch (e) {
     console.error(e);
     document.getElementById("calls-tbody").innerHTML =
       `<tr><td colspan="11" class="muted">Could not load data. If running locally, serve with <code>python -m http.server</code>.</td></tr>`;
+    const strip = document.getElementById("events-strip");
+    if (strip) strip.innerHTML = "";
   }
 }
 
@@ -99,7 +102,7 @@ function renderTable() {
     const hitBadge = c.status === "closed" && c.hit != null
       ? ` <span class="small ${c.hit ? "pos" : "neg"}">${c.hit ? "hit" : "miss"}</span>` : "";
     return `
-      <tr>
+      <tr data-ticker="${c.ticker}">
         <td class="company-cell">
           <div class="company-name">${c.company}</div>
           <div class="company-sub">${c.ticker} · ${c.market}${c.report_url ? ` · <a href="${c.report_url}" target="_blank" rel="noopener">note</a>` : ""}</div>
@@ -117,6 +120,99 @@ function renderTable() {
       </tr>`;
   }).join("");
 }
+
+// ---- next events strip --------------------------------------------------
+// Calendar-day difference between the viewer's local "today" and an
+// exchange-local YYYY-MM-DD date. Both sides are treated as date-only
+// (via Date.UTC, ignoring time-of-day) so the count is a pure calendar-day
+// diff and never shifts with the viewer's own timezone offset.
+function daysToGo(dateStr) {
+  const [y, m, d] = dateStr.split("-").map(Number);
+  const eventUTC = Date.UTC(y, m - 1, d);
+  const now = new Date();
+  const todayUTC = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+  return Math.round((eventUTC - todayUTC) / 86400000);
+}
+
+function daysLabel(days) {
+  if (days === 0) return "today";
+  if (days === 1) return "tomorrow";
+  return `in ${days}d`;
+}
+
+// One entry per ticker: the row with the latest call_date represents the
+// company (matches the row renderTable() would surface first for that
+// ticker, since the table itself sorts call_date descending). The pipeline
+// already drops past dates as of its last run, but that run could be up to
+// a day stale by the time this loads -- so re-check "in the past" against
+// the viewer's own clock too, and treat it the same as no date at all,
+// rather than ever rendering a negative day-count as if it were current.
+function nextEventsData() {
+  const byTicker = new Map();
+  for (const c of state.calls) {
+    const cur = byTicker.get(c.ticker);
+    if (!cur || c.call_date > cur.call_date) byTicker.set(c.ticker, c);
+  }
+  const items = [...byTicker.values()].map(c => {
+    const ne = c.next_earnings;
+    const days = ne ? daysToGo(ne.date) : null;
+    return { ticker: c.ticker, company: c.company, next_earnings: days != null && days < 0 ? null : ne, days };
+  });
+  items.sort((a, b) => {
+    const da = a.next_earnings && a.next_earnings.date;
+    const db = b.next_earnings && b.next_earnings.date;
+    if (da && db) return da.localeCompare(db);
+    if (da) return -1;
+    if (db) return 1;
+    return a.company.localeCompare(b.company);
+  });
+  return items;
+}
+
+function renderEventsStrip() {
+  const el = document.getElementById("events-strip");
+  if (!el) return;
+  const items = nextEventsData();
+  el.innerHTML = items.map(it => {
+    const ne = it.next_earnings;
+    const days = ne ? it.days : null;
+    const soon = days != null && days <= 7;
+    const dateHtml = ne ? ne.date : `<span class="no-date">—</span>`;
+    const daysHtml = days != null ? `<span class="event-days">${daysLabel(days)}</span>` : "";
+    const title = ne ? `${ne.date} · source: ${ne.source} · as of ${ne.as_of || "—"}` : "No confirmed earnings date yet";
+    return `
+      <button type="button" class="event-chip${soon ? " soon" : ""}" data-ticker="${it.ticker}" title="${title}">
+        <span class="event-ticker">${it.ticker}</span>
+        <span class="event-date">${dateHtml}</span>
+        ${daysHtml}
+      </button>`;
+  }).join("");
+}
+
+function scrollToTicker(ticker) {
+  let row = document.querySelector(`#calls-tbody tr[data-ticker="${CSS.escape(ticker)}"]`);
+  if (!row) {
+    // The company's row may be hidden by the active filter -- reset to
+    // "all" so it actually exists in the DOM, then try again.
+    state.statusFilter = "all";
+    state.marketFilter = "all";
+    document.querySelectorAll("#status-filter button").forEach(b => b.classList.toggle("active", b.dataset.status === "all"));
+    document.querySelectorAll("#market-filter button").forEach(b => b.classList.toggle("active", b.dataset.market === "all"));
+    renderTable();
+    row = document.querySelector(`#calls-tbody tr[data-ticker="${CSS.escape(ticker)}"]`);
+  }
+  if (!row) return;
+  row.scrollIntoView({ behavior: "smooth", block: "center" });
+  row.classList.remove("row-flash");
+  void row.offsetWidth; // restart the animation if the same row was just flashed
+  row.classList.add("row-flash");
+}
+
+document.getElementById("events-strip").addEventListener("click", e => {
+  const btn = e.target.closest(".event-chip");
+  if (!btn) return;
+  scrollToTicker(btn.dataset.ticker);
+});
 
 // ---- filters ------------------------------------------------------------
 document.getElementById("status-filter").addEventListener("click", e => {
