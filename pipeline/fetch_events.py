@@ -29,18 +29,28 @@ UA = "Mozilla/5.0 (Ledger research tool)"
 CRUMB_URL = "https://query2.finance.yahoo.com/v1/test/getcrumb"
 QUOTE_SUMMARY = "https://query1.finance.yahoo.com/v10/finance/quoteSummary/{sym}"
 
-_crumb_cache = {}  # per-process, so we authenticate once per pipeline run
+_crumb_cache = {}  # per-process: caches success ("crumb") and failure
+# ("failed") alike, so once the handshake fails for one ticker -- e.g. under
+# the rate-limiting this module's docstring documents -- every other ticker
+# in the same run doesn't redundantly repeat the same doomed two-request
+# handshake against an endpoint that's already rate-limiting this IP.
 
 
 def _get_crumb(session):
     if "crumb" in _crumb_cache:
         return _crumb_cache["crumb"]
-    session.get("https://fc.yahoo.com", headers={"User-Agent": UA}, timeout=10)
-    r = session.get(CRUMB_URL, headers={"User-Agent": UA}, timeout=10)
-    r.raise_for_status()
-    crumb = r.text.strip()
-    if not crumb or crumb.startswith("<"):
-        raise ValueError("no usable crumb in getcrumb response")
+    if _crumb_cache.get("failed"):
+        raise RuntimeError("crumb fetch already failed earlier this run")
+    try:
+        session.get("https://fc.yahoo.com", headers={"User-Agent": UA}, timeout=10)
+        r = session.get(CRUMB_URL, headers={"User-Agent": UA}, timeout=10)
+        r.raise_for_status()
+        crumb = r.text.strip()
+        if not crumb or crumb.startswith("<"):
+            raise ValueError("no usable crumb in getcrumb response")
+    except Exception:
+        _crumb_cache["failed"] = True
+        raise
     _crumb_cache["crumb"] = crumb
     return crumb
 

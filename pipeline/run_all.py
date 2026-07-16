@@ -191,8 +191,19 @@ def main():
                 prev["source"] = "stale"
                 # Resolved independently of the failed price fetch, so a
                 # stale price never drags a stale/expired earnings date
-                # along with it into the fallback row.
-                prev["next_earnings"] = earnings_by_symbol.get(call["yahoo_symbol"])
+                # along with it into the fallback row. But if today's
+                # earnings resolution *also* came back empty (Yahoo/crumb
+                # failing together is plausible -- same IP, same run), don't
+                # let that wipe out a still-valid date carried over from
+                # yesterday's commit; only drop it if it's now in the past.
+                fresh_earnings = earnings_by_symbol.get(call["yahoo_symbol"])
+                if fresh_earnings is None:
+                    carried = prev.get("next_earnings")
+                    if carried and _d(carried["date"]) >= today:
+                        fresh_earnings = carried
+                    else:
+                        fresh_earnings = None
+                prev["next_earnings"] = fresh_earnings
                 enriched_calls.append(prev)
             else:
                 raise
@@ -227,7 +238,7 @@ def main():
     print("-- next earnings --")
     for sym in sorted(earnings_by_symbol):
         ne = earnings_by_symbol[sym]
-        print(f"  {sym:16s} " + (f"{ne['date']} ({ne['source']}, as of {ne['as_of']})" if ne else "-- (no confirmed date)"))
+        print(f"  {sym:16s} " + (f"{ne['date']} ({ne['source']}, as of {ne['as_of'] or '--'})" if ne else "-- (no confirmed date)"))
 
 
 if __name__ == "__main__":

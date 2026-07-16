@@ -122,15 +122,18 @@ function renderTable() {
 }
 
 // ---- next events strip --------------------------------------------------
-// Calendar-day difference between the viewer's local "today" and an
-// exchange-local YYYY-MM-DD date. Both sides are treated as date-only
-// (via Date.UTC, ignoring time-of-day) so the count is a pure calendar-day
-// diff and never shifts with the viewer's own timezone offset.
+// Calendar-day difference between "today" and an exchange-local YYYY-MM-DD
+// date. Both sides are read as UTC calendar dates (via getUTC*/Date.UTC,
+// ignoring time-of-day) -- matching the pipeline's own definition of
+// "today" (datetime.now(timezone.utc).date() in run_all.py) -- rather than
+// the viewer's local date, which would make the same event read as a
+// different day-count (or even flip to "past") depending on which
+// timezone the viewer happens to be in.
 function daysToGo(dateStr) {
   const [y, m, d] = dateStr.split("-").map(Number);
   const eventUTC = Date.UTC(y, m - 1, d);
   const now = new Date();
-  const todayUTC = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+  const todayUTC = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
   return Math.round((eventUTC - todayUTC) / 86400000);
 }
 
