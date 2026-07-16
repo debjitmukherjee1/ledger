@@ -1,0 +1,12 @@
+{
+  "_readme": "Hand-maintained next-earnings fallback, keyed by yahoo_symbol. Used when Yahoo's unofficial calendarEvents module has nothing (or the pipeline can't reach it). A manual entry here always wins over Yahoo when present. 'date': next confirmed earnings date, exchange-local, YYYY-MM-DD. 'as_of': the date you last verified it (e.g. from the company's IR page). Leave 'date' as the YYYY-MM-DD placeholder (or delete the ticker entirely) if you don't have a confirmed date yet -- the pipeline skips unfilled/invalid placeholders silently and the site shows an honest '—'. Past dates are auto-dropped by the pipeline regardless of source, so stale manual entries can't linger as if they were still upcoming.",
+  "AMZN": {"date": "YYYY-MM-DD", "as_of": "YYYY-MM-DD"},
+  "GOOGL": {"date": "YYYY-MM-DD", "as_of": "YYYY-MM-DD"},
+  "HDFCBANK.NS": {"date": "YYYY-MM-DD", "as_of": "YYYY-MM-DD"},
+  "HINDUNILVR.NS": {"date": "YYYY-MM-DD", "as_of": "YYYY-MM-DD"},
+  "ICICIBANK.NS": {"date": "YYYY-MM-DD", "as_of": "YYYY-MM-DD"},
+  "INFY.NS": {"date": "YYYY-MM-DD", "as_of": "YYYY-MM-DD"},
+  "KO": {"date": "YYYY-MM-DD", "as_of": "YYYY-MM-DD"},
+  "TCS.NS": {"date": "YYYY-MM-DD", "as_of": "YYYY-MM-DD"},
+  "V": {"date": "YYYY-MM-DD", "as_of": "YYYY-MM-DD"}
+}

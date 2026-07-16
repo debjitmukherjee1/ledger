@@ -208,7 +208,44 @@ table.calls-table { border-collapse: collapse; width: 100%; min-width: 920px; fo
 
 .no-target { color: var(--ink-dim); font-style: italic; }
 
+/* ---- Next events strip ---- */
+.events-strip-block { margin: 0 0 1.2rem; }
+.events-strip-head { display: flex; align-items: baseline; justify-content: space-between; gap: .6rem; margin-bottom: .5rem; flex-wrap: wrap; }
+.events-strip-title { font-family: var(--display); font-size: 1.05rem; font-weight: 600; letter-spacing: .3px; }
+
+.events-strip {
+  display: flex; gap: .6rem; overflow-x: auto; padding: .3rem .1rem .7rem;
+  scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin; scrollbar-color: var(--line) transparent;
+}
+.events-strip::-webkit-scrollbar { height: 6px; }
+.events-strip::-webkit-scrollbar-thumb { background: var(--line); border-radius: 999px; }
+
+.event-chip {
+  flex: none; scroll-snap-align: start; display: flex; flex-direction: column; gap: .15rem;
+  min-width: 118px; padding: .55rem .8rem; text-align: left; cursor: pointer;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-1); font-family: var(--serif); color: var(--ink);
+  transition: transform .25s var(--spring), box-shadow .25s var(--ease-out), border-color .2s;
+}
+.event-chip:hover { transform: translateY(-2px); box-shadow: var(--shadow-2); border-color: var(--accent-soft); }
+.event-chip:active { transform: scale(.98); }
+.event-chip .event-ticker { font-size: .72rem; letter-spacing: .8px; text-transform: uppercase; color: var(--ink-dim); font-weight: 600; }
+.event-chip .event-date { font-variant-numeric: tabular-nums; font-size: .92rem; font-weight: 600; }
+.event-chip .event-date.no-date { font-weight: 400; font-style: italic; color: var(--ink-dim); }
+.event-chip .event-days { font-size: .72rem; color: var(--ink-dim); }
+.event-chip.soon { border-color: var(--accent); background: var(--accent-wash); }
+.event-chip.soon .event-days { color: var(--accent); font-weight: 700; }
+
+.row-flash td { animation: rowflash 1.6s var(--ease-out); }
+@keyframes rowflash {
+  0% { background: var(--accent-wash); }
+  100% { background: transparent; }
+}
+
 @media (max-width: 720px) {
   main { padding: 1.1rem; }
   .stat-row { grid-template-columns: repeat(2, 1fr); }
+  .events-strip { margin: 0 -1.1rem; padding-left: 1.1rem; padding-right: 1.1rem; }
+  .event-chip { min-width: 132px; }
 }

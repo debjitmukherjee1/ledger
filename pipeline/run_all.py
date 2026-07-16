@@ -29,6 +29,7 @@ import os
 from datetime import date, datetime, timezone
 
 import config
+import fetch_events
 import fetch_prices
 
 # Rough index levels so mock benchmark series look plausible.
@@ -80,7 +81,23 @@ def find_successor(calls, call):
     return min(candidates, key=lambda c: _d(c["call_date"]))
 
 
-def enrich(call, calls, today):
+def resolve_next_earnings(symbol, manual_events, today):
+    """Manual entry wins if present; otherwise best-effort Yahoo. Either way,
+    a date already in the past is dropped -- never presented as "next"."""
+    manual = manual_events.get(symbol)
+    if manual:
+        date_str, source, as_of = manual["date"], "manual", manual["as_of"]
+    else:
+        yahoo_date = fetch_events.fetch_earnings_date(symbol)
+        if yahoo_date is None:
+            return None
+        date_str, source, as_of = yahoo_date, "Yahoo", today.isoformat()
+    if _d(date_str) < today:
+        return None
+    return {"date": date_str, "source": source, "as_of": as_of}
+
+
+def enrich(call, calls, today, earnings_by_symbol):
     symbol = call["yahoo_symbol"]
     bench_symbol = config.BENCHMARK_SYMBOLS[call["benchmark"]]
     call_date = _d(call["call_date"])
@@ -132,6 +149,7 @@ def enrich(call, calls, today):
         "hit": hit,
         "series": [{"d": d, "c": c} for d, c in zip(s_dates, s_closes)],
         "source": "mock" if config.MOCK_MODE else "live",
+        "next_earnings": earnings_by_symbol.get(symbol),
     })
     return enriched
 
@@ -147,6 +165,14 @@ def main():
     updated = datetime.now(timezone.utc).strftime("%d %b %Y %H:%M UTC")
 
     calls = config.load_calls()
+    manual_events = config.load_manual_events()
+    # Resolved once per unique ticker (not per call row) -- a company only
+    # has one next-earnings date regardless of how many calls reference it,
+    # and this keeps a flaky Yahoo/crumb hiccup from being retried per row.
+    earnings_by_symbol = {
+        sym: resolve_next_earnings(sym, manual_events, today)
+        for sym in {c["yahoo_symbol"] for c in calls}
+    }
 
     prev_path = os.path.join(config.DATA_DIR, "calls.json")
     prev_by_key = {}
@@ -157,12 +183,16 @@ def main():
     enriched_calls = []
     for call in calls:
         try:
-            enriched_calls.append(enrich(call, calls, today))
+            enriched_calls.append(enrich(call, calls, today, earnings_by_symbol))
         except Exception as e:
             prev = prev_by_key.get(_key(call))
             if prev:
                 print(f"  ! {call['company']} ({call['call_date']}): fetch failed ({e}); keeping previous data, marked stale")
                 prev["source"] = "stale"
+                # Resolved independently of the failed price fetch, so a
+                # stale price never drags a stale/expired earnings date
+                # along with it into the fallback row.
+                prev["next_earnings"] = earnings_by_symbol.get(call["yahoo_symbol"])
                 enriched_calls.append(prev)
             else:
                 raise
@@ -193,6 +223,11 @@ def main():
         print(f"  {c['company']:26s} {c['rating']:11s} ret {c['return_pct']:+7.2f}%  alpha {c['alpha']:+7.2f}%  "
               f"status {c['status']:7s}" + (f" hit={c['hit']}" if c["hit"] is not None else ""))
     print(f"Wrote {len(enriched_calls)} calls -> {os.path.normpath(config.DATA_DIR)}")
+
+    print("-- next earnings --")
+    for sym in sorted(earnings_by_symbol):
+        ne = earnings_by_symbol[sym]
+        print(f"  {sym:16s} " + (f"{ne['date']} ({ne['source']}, as of {ne['as_of']})" if ne else "-- (no confirmed date)"))
 
 
 if __name__ == "__main__":
