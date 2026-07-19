@@ -1,5 +1,5 @@
 {
-  "updated_at": "18 Jul 2026 07:14 UTC",
+  "updated_at": "19 Jul 2026 07:40 UTC",
   "calls": [
     {
       "company": "Tata Consultancy Services",
@@ -15,7 +15,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 2269.0,
-      "as_of": "2026-07-18",
+      "as_of": "2026-07-19",
       "return_pct": 3.18,
       "benchmark_return_pct": 0.69,
       "alpha": 2.49,
@@ -112,7 +112,11 @@
         }
       ],
       "source": "live",
-      "next_earnings": null
+      "next_earnings": {
+        "date": "2026-10-08",
+        "source": "Yahoo",
+        "as_of": "2026-07-19"
+      }
     },
     {
       "company": "HDFC Bank",
@@ -128,7 +132,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 819.6,
-      "as_of": "2026-07-18",
+      "as_of": "2026-07-19",
       "return_pct": 4.42,
       "benchmark_return_pct": 1.16,
       "alpha": 3.26,
@@ -446,7 +450,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1096.5,
-      "as_of": "2026-07-18",
+      "as_of": "2026-07-19",
       "return_pct": 5.34,
       "benchmark_return_pct": 0.66,
       "alpha": 4.68,
@@ -720,7 +724,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1444.3,
-      "as_of": "2026-07-18",
+      "as_of": "2026-07-19",
       "return_pct": 2.36,
       "benchmark_return_pct": -0.39,
       "alpha": 2.75,
@@ -785,7 +789,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 247.23,
-      "as_of": "2026-07-18",
+      "as_of": "2026-07-19",
       "return_pct": 0.09,
       "benchmark_return_pct": -1.14,
       "alpha": 1.23,
@@ -838,7 +842,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 346.77,
-      "as_of": "2026-07-18",
+      "as_of": "2026-07-19",
       "return_pct": -2.87,
       "benchmark_return_pct": -0.56,
       "alpha": -2.31,
@@ -915,7 +919,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 358.56,
-      "as_of": "2026-07-18",
+      "as_of": "2026-07-19",
       "return_pct": 10.46,
       "benchmark_return_pct": -1.28,
       "alpha": 11.74,
@@ -1032,7 +1036,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 81.56,
-      "as_of": "2026-07-18",
+      "as_of": "2026-07-19",
       "return_pct": 0.32,
       "benchmark_return_pct": -0.56,
       "alpha": 0.88,
@@ -1109,7 +1113,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 2143.8,
-      "as_of": "2026-07-18",
+      "as_of": "2026-07-19",
       "return_pct": 0.62,
       "benchmark_return_pct": 1.17,
       "alpha": -0.55,
