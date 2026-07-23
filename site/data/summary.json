@@ -1,14 +1,14 @@
 {
-  "updated_at": "22 Jul 2026 07:55 UTC",
+  "updated_at": "23 Jul 2026 08:01 UTC",
   "total_calls": 11,
   "closed_calls": 2,
   "hit_rate_pct": 0.0,
-  "average_alpha_pct": 0.7,
+  "average_alpha_pct": 0.64,
   "best_call": {
-    "company": "Visa",
-    "rating": "BUY",
-    "call_date": "2026-06-15",
-    "alpha": 10.21
+    "company": "ICICI Bank",
+    "rating": "HOLD",
+    "call_date": "2026-05-06",
+    "alpha": 9.82
   },
   "worst_call": {
     "company": "Infosys",
