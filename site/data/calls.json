@@ -1,5 +1,5 @@
 {
-  "updated_at": "01 Aug 2026 07:42 UTC",
+  "updated_at": "02 Aug 2026 07:50 UTC",
   "calls": [
     {
       "company": "Amazon",
@@ -15,7 +15,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 271.58,
-      "as_of": "2026-08-01",
+      "as_of": "2026-08-02",
       "return_pct": 9.95,
       "benchmark_return_pct": -0.71,
       "alpha": 10.66,
@@ -108,7 +108,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 356.13,
-      "as_of": "2026-08-01",
+      "as_of": "2026-08-02",
       "return_pct": -0.24,
       "benchmark_return_pct": -0.13,
       "alpha": -0.11,
@@ -225,7 +225,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 366.13,
-      "as_of": "2026-08-01",
+      "as_of": "2026-08-02",
       "return_pct": 12.79,
       "benchmark_return_pct": -0.85,
       "alpha": 13.64,
@@ -382,7 +382,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 87.59,
-      "as_of": "2026-08-01",
+      "as_of": "2026-08-02",
       "return_pct": 7.74,
       "benchmark_return_pct": -0.13,
       "alpha": 7.87,
