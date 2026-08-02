@@ -1,5 +1,5 @@
 {
-  "updated_at": "01 Aug 2026 07:42 UTC",
+  "updated_at": "02 Aug 2026 07:50 UTC",
   "calls": [
     {
       "company": "Tata Consultancy Services",
@@ -15,7 +15,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 2365.6,
-      "as_of": "2026-08-01",
+      "as_of": "2026-08-02",
       "return_pct": 7.58,
       "benchmark_return_pct": 0.89,
       "alpha": 6.69,
@@ -168,7 +168,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 748.15,
-      "as_of": "2026-08-01",
+      "as_of": "2026-08-02",
       "return_pct": -4.68,
       "benchmark_return_pct": 1.36,
       "alpha": -6.04,
@@ -526,7 +526,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1130.1,
-      "as_of": "2026-08-01",
+      "as_of": "2026-08-02",
       "return_pct": 8.57,
       "benchmark_return_pct": 0.86,
       "alpha": 7.71,
@@ -840,7 +840,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1435.4,
-      "as_of": "2026-08-01",
+      "as_of": "2026-08-02",
       "return_pct": 1.73,
       "benchmark_return_pct": -0.19,
       "alpha": 1.92,
@@ -945,7 +945,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 271.58,
-      "as_of": "2026-08-01",
+      "as_of": "2026-08-02",
       "return_pct": 9.95,
       "benchmark_return_pct": -0.71,
       "alpha": 10.66,
@@ -1038,7 +1038,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 356.13,
-      "as_of": "2026-08-01",
+      "as_of": "2026-08-02",
       "return_pct": -0.24,
       "benchmark_return_pct": -0.13,
       "alpha": -0.11,
@@ -1155,7 +1155,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 366.13,
-      "as_of": "2026-08-01",
+      "as_of": "2026-08-02",
       "return_pct": 12.79,
       "benchmark_return_pct": -0.85,
       "alpha": 13.64,
@@ -1312,7 +1312,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 87.59,
-      "as_of": "2026-08-01",
+      "as_of": "2026-08-02",
       "return_pct": 7.74,
       "benchmark_return_pct": -0.13,
       "alpha": 7.87,
@@ -1429,7 +1429,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 2101.3,
-      "as_of": "2026-08-01",
+      "as_of": "2026-08-02",
       "return_pct": -1.38,
       "benchmark_return_pct": 1.38,
       "alpha": -2.76,
@@ -1497,7 +1497,7 @@
       "next_earnings": {
         "date": "2026-10-29",
         "source": "Yahoo",
-        "as_of": "2026-08-01"
+        "as_of": "2026-08-02"
       }
     }
   ]
