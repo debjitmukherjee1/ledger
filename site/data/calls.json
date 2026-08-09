@@ -1,5 +1,5 @@
 {
-  "updated_at": "08 Aug 2026 06:08 UTC",
+  "updated_at": "09 Aug 2026 06:09 UTC",
   "calls": [
     {
       "company": "Tata Consultancy Services",
@@ -15,7 +15,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 2452.7,
-      "as_of": "2026-08-08",
+      "as_of": "2026-08-09",
       "return_pct": 11.54,
       "benchmark_return_pct": 1.67,
       "alpha": 9.87,
@@ -188,7 +188,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 731.0,
-      "as_of": "2026-08-08",
+      "as_of": "2026-08-09",
       "return_pct": -6.87,
       "benchmark_return_pct": 2.14,
       "alpha": -9.01,
@@ -566,7 +566,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1175.1,
-      "as_of": "2026-08-08",
+      "as_of": "2026-08-09",
       "return_pct": 12.89,
       "benchmark_return_pct": 1.63,
       "alpha": 11.26,
@@ -900,7 +900,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1421.0,
-      "as_of": "2026-08-08",
+      "as_of": "2026-08-09",
       "return_pct": 0.71,
       "benchmark_return_pct": 0.57,
       "alpha": 0.14,
@@ -1025,7 +1025,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 274.48,
-      "as_of": "2026-08-08",
+      "as_of": "2026-08-09",
       "return_pct": 11.13,
       "benchmark_return_pct": 2.84,
       "alpha": 8.29,
@@ -1122,11 +1122,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-29",
-        "source": "Yahoo",
-        "as_of": "2026-08-08"
-      }
+      "next_earnings": null
     },
     {
       "company": "Alphabet",
@@ -1142,7 +1138,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 354.3,
-      "as_of": "2026-08-08",
+      "as_of": "2026-08-09",
       "return_pct": -0.76,
       "benchmark_return_pct": 3.44,
       "alpha": -4.2,
@@ -1279,7 +1275,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 362.5,
-      "as_of": "2026-08-08",
+      "as_of": "2026-08-09",
       "return_pct": 11.67,
       "benchmark_return_pct": 2.69,
       "alpha": 8.98,
@@ -1456,7 +1452,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 87.05,
-      "as_of": "2026-08-08",
+      "as_of": "2026-08-09",
       "return_pct": 7.07,
       "benchmark_return_pct": 3.44,
       "alpha": 3.63,
@@ -1577,7 +1573,11 @@
         }
       ],
       "source": "live",
-      "next_earnings": null
+      "next_earnings": {
+        "date": "2026-10-20",
+        "source": "Yahoo",
+        "as_of": "2026-08-09"
+      }
     },
     {
       "company": "Hindustan Unilever",
@@ -1593,7 +1593,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 2096.0,
-      "as_of": "2026-08-08",
+      "as_of": "2026-08-09",
       "return_pct": -1.62,
       "benchmark_return_pct": 2.16,
       "alpha": -3.78,
