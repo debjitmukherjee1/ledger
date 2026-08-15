@@ -1,14 +1,14 @@
 {
-  "updated_at": "14 Aug 2026 06:55 UTC",
+  "updated_at": "15 Aug 2026 05:52 UTC",
   "total_calls": 11,
   "closed_calls": 2,
   "hit_rate_pct": 0.0,
-  "average_alpha_pct": 0.96,
+  "average_alpha_pct": 0.89,
   "best_call": {
     "company": "Infosys",
     "rating": "ACCUMULATE",
     "call_date": "2026-07-02",
-    "alpha": 11.58
+    "alpha": 11.54
   },
   "worst_call": {
     "company": "Infosys",
