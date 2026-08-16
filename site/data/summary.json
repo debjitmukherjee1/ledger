@@ -1,9 +1,9 @@
 {
-  "updated_at": "15 Aug 2026 05:52 UTC",
+  "updated_at": "16 Aug 2026 05:55 UTC",
   "total_calls": 11,
   "closed_calls": 2,
   "hit_rate_pct": 0.0,
-  "average_alpha_pct": 0.89,
+  "average_alpha_pct": 1.01,
   "best_call": null,
   "worst_call": null
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "15 Aug 2026 05:52 UTC",
+  "updated_at": "16 Aug 2026 05:55 UTC",
   "calls": [
     {
       "company": "Amazon",
@@ -15,7 +15,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 262.65,
-      "as_of": "2026-08-15",
+      "as_of": "2026-08-16",
       "return_pct": 6.34,
       "benchmark_return_pct": 3.21,
       "alpha": 3.13,
@@ -132,7 +132,11 @@
         }
       ],
       "source": "live",
-      "next_earnings": null
+      "next_earnings": {
+        "date": "2026-10-29",
+        "source": "Yahoo",
+        "as_of": "2026-08-16"
+      }
     },
     {
       "company": "Alphabet",
@@ -148,7 +152,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 345.9,
-      "as_of": "2026-08-15",
+      "as_of": "2026-08-16",
       "return_pct": -3.11,
       "benchmark_return_pct": 3.82,
       "alpha": -6.93,
@@ -305,7 +309,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 364.15,
-      "as_of": "2026-08-15",
+      "as_of": "2026-08-16",
       "return_pct": 12.18,
       "benchmark_return_pct": 3.06,
       "alpha": 9.12,
@@ -486,11 +490,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-27",
-        "source": "Yahoo",
-        "as_of": "2026-08-15"
-      }
+      "next_earnings": null
     },
     {
       "company": "Coca-Cola",
@@ -506,7 +506,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 87.71,
-      "as_of": "2026-08-15",
+      "as_of": "2026-08-16",
       "return_pct": 7.88,
       "benchmark_return_pct": 3.82,
       "alpha": 4.06,
