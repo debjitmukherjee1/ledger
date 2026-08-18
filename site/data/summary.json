@@ -1,9 +1,9 @@
 {
-  "updated_at": "17 Aug 2026 06:01 UTC",
+  "updated_at": "18 Aug 2026 05:56 UTC",
   "total_calls": 11,
   "closed_calls": 2,
   "hit_rate_pct": 0.0,
-  "average_alpha_pct": 0.6,
+  "average_alpha_pct": 0.23,
   "best_call": {
     "company": "ICICI Bank",
     "rating": "HOLD",
