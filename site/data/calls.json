@@ -1,5 +1,5 @@
 {
-  "updated_at": "19 Aug 2026 05:57 UTC",
+  "updated_at": "20 Aug 2026 05:57 UTC",
   "calls": [
     {
       "company": "Tata Consultancy Services",
@@ -14,12 +14,12 @@
       "currency": "INR",
       "report_url": "",
       "status": "open",
-      "live_price": 2267.8,
-      "as_of": "2026-08-19",
-      "return_pct": 3.13,
-      "benchmark_return_pct": -0.47,
-      "alpha": 3.6,
-      "target_distance_pct": 10.33,
+      "live_price": 2298.8,
+      "as_of": "2026-08-20",
+      "return_pct": 4.54,
+      "benchmark_return_pct": 0.13,
+      "alpha": 4.41,
+      "target_distance_pct": 8.84,
       "hit": null,
       "series": [
         {
@@ -196,7 +196,11 @@
         },
         {
           "d": "2026-08-19",
-          "c": 2267.8
+          "c": 2289.0
+        },
+        {
+          "d": "2026-08-20",
+          "c": 2298.8
         }
       ],
       "source": "live",
@@ -215,12 +219,12 @@
       "currency": "INR",
       "report_url": "",
       "status": "open",
-      "live_price": 716.45,
-      "as_of": "2026-08-19",
-      "return_pct": -8.72,
-      "benchmark_return_pct": -0.0,
-      "alpha": -8.72,
-      "target_distance_pct": 2.87,
+      "live_price": 726.95,
+      "as_of": "2026-08-20",
+      "return_pct": -7.38,
+      "benchmark_return_pct": 0.6,
+      "alpha": -7.98,
+      "target_distance_pct": 1.38,
       "hit": null,
       "series": [
         {
@@ -300,10 +304,6 @@
           "c": 761.45
         },
         {
-          "d": "2026-07-22",
-          "c": 753.15
-        },
-        {
           "d": "2026-07-23",
           "c": 747.25
         },
@@ -381,7 +381,11 @@
         },
         {
           "d": "2026-08-19",
-          "c": 716.45
+          "c": 720.0
+        },
+        {
+          "d": "2026-08-20",
+          "c": 726.95
         }
       ],
       "source": "live",
@@ -625,12 +629,12 @@
       "currency": "INR",
       "report_url": "",
       "status": "open",
-      "live_price": 1119.8,
-      "as_of": "2026-08-19",
-      "return_pct": 7.58,
-      "benchmark_return_pct": -0.5,
-      "alpha": 8.08,
-      "target_distance_pct": 6.27,
+      "live_price": 1129.5,
+      "as_of": "2026-08-20",
+      "return_pct": 8.51,
+      "benchmark_return_pct": 0.1,
+      "alpha": 8.41,
+      "target_distance_pct": 5.36,
       "hit": null,
       "series": [
         {
@@ -764,6 +768,10 @@
         {
           "d": "2026-08-19",
           "c": 1119.8
+        },
+        {
+          "d": "2026-08-20",
+          "c": 1129.5
         }
       ],
       "source": "live",
@@ -983,12 +991,12 @@
       "currency": "INR",
       "report_url": "",
       "status": "open",
-      "live_price": 1400.0,
-      "as_of": "2026-08-19",
-      "return_pct": -0.78,
-      "benchmark_return_pct": -1.53,
-      "alpha": 0.75,
-      "target_distance_pct": -14.36,
+      "live_price": 1406.7,
+      "as_of": "2026-08-20",
+      "return_pct": -0.3,
+      "benchmark_return_pct": -0.94,
+      "alpha": 0.64,
+      "target_distance_pct": -14.77,
       "hit": null,
       "series": [
         {
@@ -1117,7 +1125,11 @@
         },
         {
           "d": "2026-08-19",
-          "c": 1400.0
+          "c": 1402.0
+        },
+        {
+          "d": "2026-08-20",
+          "c": 1406.7
         }
       ],
       "source": "live",
@@ -1136,12 +1148,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 259.45,
-      "as_of": "2026-08-19",
-      "return_pct": 5.04,
-      "benchmark_return_pct": 1.96,
-      "alpha": 3.08,
-      "target_distance_pct": 5.99,
+      "live_price": 265.84,
+      "as_of": "2026-08-20",
+      "return_pct": 7.63,
+      "benchmark_return_pct": 2.18,
+      "alpha": 5.45,
+      "target_distance_pct": 3.45,
       "hit": null,
       "series": [
         {
@@ -1259,6 +1271,10 @@
         {
           "d": "2026-08-18",
           "c": 259.45
+        },
+        {
+          "d": "2026-08-19",
+          "c": 265.84
         }
       ],
       "source": "live",
@@ -1277,12 +1293,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 344.2,
-      "as_of": "2026-08-19",
-      "return_pct": -3.59,
-      "benchmark_return_pct": 3.28,
-      "alpha": -6.87,
-      "target_distance_pct": 13.31,
+      "live_price": 344.72,
+      "as_of": "2026-08-20",
+      "return_pct": -3.44,
+      "benchmark_return_pct": 2.78,
+      "alpha": -6.22,
+      "target_distance_pct": 13.14,
       "hit": null,
       "series": [
         {
@@ -1424,6 +1440,10 @@
         {
           "d": "2026-08-18",
           "c": 344.2
+        },
+        {
+          "d": "2026-08-19",
+          "c": 344.72
         }
       ],
       "source": "live",
@@ -1442,12 +1462,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 358.84,
-      "as_of": "2026-08-19",
-      "return_pct": 10.54,
-      "benchmark_return_pct": 1.82,
-      "alpha": 8.72,
-      "target_distance_pct": 3.95,
+      "live_price": 365.54,
+      "as_of": "2026-08-20",
+      "return_pct": 12.61,
+      "benchmark_return_pct": 2.03,
+      "alpha": 10.58,
+      "target_distance_pct": 2.04,
       "hit": null,
       "series": [
         {
@@ -1625,6 +1645,14 @@
         {
           "d": "2026-08-17",
           "c": 358.84
+        },
+        {
+          "d": "2026-08-18",
+          "c": 364.25
+        },
+        {
+          "d": "2026-08-19",
+          "c": 365.54
         }
       ],
       "source": "live",
@@ -1643,12 +1671,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 86.98,
-      "as_of": "2026-08-19",
-      "return_pct": 6.99,
-      "benchmark_return_pct": 3.28,
-      "alpha": 3.71,
-      "target_distance_pct": 0.02,
+      "live_price": 90.35,
+      "as_of": "2026-08-20",
+      "return_pct": 11.13,
+      "benchmark_return_pct": 2.78,
+      "alpha": 8.35,
+      "target_distance_pct": -3.71,
       "hit": null,
       "series": [
         {
@@ -1786,14 +1814,18 @@
         {
           "d": "2026-08-17",
           "c": 86.98
+        },
+        {
+          "d": "2026-08-18",
+          "c": 88.82
+        },
+        {
+          "d": "2026-08-19",
+          "c": 90.35
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-20",
-        "source": "Yahoo",
-        "as_of": "2026-08-19"
-      }
+      "next_earnings": null
     },
     {
       "company": "Hindustan Unilever",
@@ -1808,12 +1840,12 @@
       "currency": "INR",
       "report_url": "",
       "status": "open",
-      "live_price": 2019.8,
-      "as_of": "2026-08-19",
-      "return_pct": -5.2,
-      "benchmark_return_pct": 0.01,
-      "alpha": -5.21,
-      "target_distance_pct": 8.43,
+      "live_price": 2026.1,
+      "as_of": "2026-08-20",
+      "return_pct": -4.9,
+      "benchmark_return_pct": 0.62,
+      "alpha": -5.52,
+      "target_distance_pct": 8.09,
       "hit": null,
       "series": [
         {
@@ -1914,11 +1946,19 @@
         },
         {
           "d": "2026-08-19",
-          "c": 2019.8
+          "c": 2020.7
+        },
+        {
+          "d": "2026-08-20",
+          "c": 2026.1
         }
       ],
       "source": "live",
-      "next_earnings": null
+      "next_earnings": {
+        "date": "2026-10-29",
+        "source": "Yahoo",
+        "as_of": "2026-08-20"
+      }
     }
   ]
 }
