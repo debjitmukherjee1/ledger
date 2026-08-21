@@ -1,5 +1,5 @@
 {
-  "updated_at": "20 Aug 2026 05:57 UTC",
+  "updated_at": "21 Aug 2026 05:59 UTC",
   "calls": [
     {
       "company": "Amazon",
@@ -14,12 +14,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 265.84,
-      "as_of": "2026-08-20",
-      "return_pct": 7.63,
-      "benchmark_return_pct": 2.18,
-      "alpha": 5.45,
-      "target_distance_pct": 3.45,
+      "live_price": 260.11,
+      "as_of": "2026-08-21",
+      "return_pct": 5.31,
+      "benchmark_return_pct": 1.29,
+      "alpha": 4.02,
+      "target_distance_pct": 5.72,
       "hit": null,
       "series": [
         {
@@ -141,6 +141,10 @@
         {
           "d": "2026-08-19",
           "c": 265.84
+        },
+        {
+          "d": "2026-08-20",
+          "c": 260.11
         }
       ],
       "source": "live",
@@ -159,12 +163,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 344.72,
-      "as_of": "2026-08-20",
-      "return_pct": -3.44,
-      "benchmark_return_pct": 2.78,
-      "alpha": -6.22,
-      "target_distance_pct": 13.14,
+      "live_price": 340.67,
+      "as_of": "2026-08-21",
+      "return_pct": -4.57,
+      "benchmark_return_pct": 1.89,
+      "alpha": -6.46,
+      "target_distance_pct": 14.48,
       "hit": null,
       "series": [
         {
@@ -310,6 +314,10 @@
         {
           "d": "2026-08-19",
           "c": 344.72
+        },
+        {
+          "d": "2026-08-20",
+          "c": 340.67
         }
       ],
       "source": "live",
@@ -328,12 +336,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 365.54,
-      "as_of": "2026-08-20",
-      "return_pct": 12.61,
-      "benchmark_return_pct": 2.03,
-      "alpha": 10.58,
-      "target_distance_pct": 2.04,
+      "live_price": 365.73,
+      "as_of": "2026-08-21",
+      "return_pct": 12.66,
+      "benchmark_return_pct": 1.15,
+      "alpha": 11.51,
+      "target_distance_pct": 1.99,
       "hit": null,
       "series": [
         {
@@ -519,6 +527,10 @@
         {
           "d": "2026-08-19",
           "c": 365.54
+        },
+        {
+          "d": "2026-08-20",
+          "c": 365.73
         }
       ],
       "source": "live",
@@ -537,12 +549,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 90.35,
-      "as_of": "2026-08-20",
-      "return_pct": 11.13,
-      "benchmark_return_pct": 2.78,
-      "alpha": 8.35,
-      "target_distance_pct": -3.71,
+      "live_price": 90.5,
+      "as_of": "2026-08-21",
+      "return_pct": 11.32,
+      "benchmark_return_pct": 1.89,
+      "alpha": 9.43,
+      "target_distance_pct": -3.87,
       "hit": null,
       "series": [
         {
@@ -688,6 +700,10 @@
         {
           "d": "2026-08-19",
           "c": 90.35
+        },
+        {
+          "d": "2026-08-20",
+          "c": 90.5
         }
       ],
       "source": "live",
