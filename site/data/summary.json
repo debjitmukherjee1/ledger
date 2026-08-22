@@ -1,14 +1,14 @@
 {
-  "updated_at": "21 Aug 2026 05:59 UTC",
+  "updated_at": "22 Aug 2026 05:54 UTC",
   "total_calls": 11,
   "closed_calls": 2,
   "hit_rate_pct": 0.0,
-  "average_alpha_pct": 1.17,
+  "average_alpha_pct": 1.26,
   "best_call": {
     "company": "Visa",
     "rating": "BUY",
     "call_date": "2026-06-15",
-    "alpha": 11.51
+    "alpha": 12.71
   },
   "worst_call": {
     "company": "Infosys",
