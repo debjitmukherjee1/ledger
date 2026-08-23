@@ -1,5 +1,5 @@
 {
-  "updated_at": "22 Aug 2026 05:54 UTC",
+  "updated_at": "23 Aug 2026 05:56 UTC",
   "calls": [
     {
       "company": "Tata Consultancy Services",
@@ -15,7 +15,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 2302.0,
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-23",
       "return_pct": 4.68,
       "benchmark_return_pct": 0.35,
       "alpha": 4.33,
@@ -228,7 +228,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 726.95,
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-23",
       "return_pct": -7.38,
       "benchmark_return_pct": 0.81,
       "alpha": -8.19,
@@ -646,7 +646,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1121.0,
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-23",
       "return_pct": 7.7,
       "benchmark_return_pct": 0.32,
       "alpha": 7.38,
@@ -1020,7 +1020,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1420.0,
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-23",
       "return_pct": 0.64,
       "benchmark_return_pct": -0.73,
       "alpha": 1.37,
@@ -1185,7 +1185,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 258.63,
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-23",
       "return_pct": 4.71,
       "benchmark_return_pct": 1.73,
       "alpha": 2.98,
@@ -1322,7 +1322,11 @@
         }
       ],
       "source": "live",
-      "next_earnings": null
+      "next_earnings": {
+        "date": "2026-10-29",
+        "source": "Yahoo",
+        "as_of": "2026-08-23"
+      }
     },
     {
       "company": "Alphabet",
@@ -1338,7 +1342,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 344.82,
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-23",
       "return_pct": -3.41,
       "benchmark_return_pct": 2.33,
       "alpha": -5.74,
@@ -1515,7 +1519,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 371.04,
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-23",
       "return_pct": 14.3,
       "benchmark_return_pct": 1.59,
       "alpha": 12.71,
@@ -1716,11 +1720,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-27",
-        "source": "Yahoo",
-        "as_of": "2026-08-22"
-      }
+      "next_earnings": null
     },
     {
       "company": "Coca-Cola",
@@ -1736,7 +1736,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 91.1,
-      "as_of": "2026-08-22",
+      "as_of": "2026-08-23",
       "return_pct": 12.05,
       "benchmark_return_pct": 2.33,
       "alpha": 9.72,
@@ -1912,12 +1912,12 @@
       "currency": "INR",
       "report_url": "",
       "status": "open",
-      "live_price": 2028.0,
-      "as_of": "2026-08-22",
-      "return_pct": -4.82,
+      "live_price": 2015.0,
+      "as_of": "2026-08-23",
+      "return_pct": -5.43,
       "benchmark_return_pct": 0.83,
-      "alpha": -5.65,
-      "target_distance_pct": 7.99,
+      "alpha": -6.26,
+      "target_distance_pct": 8.68,
       "hit": null,
       "series": [
         {
@@ -2031,6 +2031,10 @@
         {
           "d": "2026-08-20",
           "c": 2028.0
+        },
+        {
+          "d": "2026-08-21",
+          "c": 2015.0
         }
       ],
       "source": "live",
