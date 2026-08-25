@@ -109,7 +109,7 @@
     "target": 390,
     "currency": "USD",
     "report_url": "",
-    "status": "open"
+    "status": "closed"
   },
   {
     "company": "Visa",
@@ -123,7 +123,7 @@
     "target": 373,
     "currency": "USD",
     "report_url": "",
-    "status": "open"
+    "status": "closed"
   },
   {
     "company": "Coca-Cola",
@@ -137,7 +137,7 @@
     "target": 87,
     "currency": "USD",
     "report_url": "",
-    "status": "open"
+    "status": "closed"
   },
   {
     "company": "Hindustan Unilever",
@@ -147,8 +147,120 @@
     "benchmark": "Nifty 50",
     "call_date": "2026-07-14",
     "rating": "HOLD",
-    "price_at_call": 2130.60,
+    "price_at_call": 2130.6,
     "target": 2190,
+    "currency": "INR",
+    "report_url": "",
+    "status": "open"
+  },
+  {
+    "company": "Alphabet",
+    "ticker": "GOOGL",
+    "yahoo_symbol": "GOOGL",
+    "market": "US",
+    "benchmark": "S&P 500",
+    "call_date": "2026-08-05",
+    "rating": "HOLD",
+    "price_at_call": 363,
+    "target": 384,
+    "currency": "USD",
+    "report_url": "",
+    "status": "open"
+  },
+  {
+    "company": "Visa",
+    "ticker": "V",
+    "yahoo_symbol": "V",
+    "market": "US",
+    "benchmark": "S&P 500",
+    "call_date": "2026-07-18",
+    "rating": "HOLD",
+    "price_at_call": 356,
+    "target": 355,
+    "currency": "USD",
+    "report_url": "",
+    "status": "open"
+  },
+  {
+    "company": "Coca-Cola",
+    "ticker": "KO",
+    "yahoo_symbol": "KO",
+    "market": "US",
+    "benchmark": "S&P 500",
+    "call_date": "2026-07-28",
+    "rating": "HOLD",
+    "price_at_call": 87,
+    "target": 86,
+    "currency": "USD",
+    "report_url": "",
+    "status": "open"
+  },
+  {
+    "company": "Reliance Industries",
+    "ticker": "RELIANCE",
+    "yahoo_symbol": "RELIANCE.NS",
+    "market": "India",
+    "benchmark": "Nifty 50",
+    "call_date": "2026-08-04",
+    "rating": "HOLD",
+    "price_at_call": 1302,
+    "target": 1361,
+    "currency": "INR",
+    "report_url": "",
+    "status": "open"
+  },
+  {
+    "company": "Microsoft",
+    "ticker": "MSFT",
+    "yahoo_symbol": "MSFT",
+    "market": "US",
+    "benchmark": "S&P 500",
+    "call_date": "2026-08-05",
+    "rating": "HOLD",
+    "price_at_call": 488.63,
+    "target": 488,
+    "currency": "USD",
+    "report_url": "",
+    "status": "open"
+  },
+  {
+    "company": "JPMorgan Chase",
+    "ticker": "JPM",
+    "yahoo_symbol": "JPM",
+    "market": "US",
+    "benchmark": "S&P 500",
+    "call_date": "2026-08-14",
+    "rating": "REDUCE",
+    "price_at_call": 362.84,
+    "target": 323,
+    "currency": "USD",
+    "report_url": "",
+    "status": "open"
+  },
+  {
+    "company": "Bajaj Finance",
+    "ticker": "BAJFINANCE",
+    "yahoo_symbol": "BAJFINANCE.NS",
+    "market": "India",
+    "benchmark": "Nifty 50",
+    "call_date": "2026-08-07",
+    "rating": "REDUCE",
+    "price_at_call": 1078,
+    "target": 1007,
+    "currency": "INR",
+    "report_url": "",
+    "status": "open"
+  },
+  {
+    "company": "Maruti Suzuki",
+    "ticker": "MARUTI",
+    "yahoo_symbol": "MARUTI.NS",
+    "market": "India",
+    "benchmark": "Nifty 50",
+    "call_date": "2026-08-18",
+    "rating": "REDUCE",
+    "price_at_call": 13691,
+    "target": 12978,
     "currency": "INR",
     "report_url": "",
     "status": "open"
