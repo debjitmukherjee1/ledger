@@ -1,5 +1,5 @@
 {
-  "updated_at": "25 Aug 2026 05:58 UTC",
+  "updated_at": "25 Aug 2026 12:44 UTC",
   "calls": [
     {
       "company": "Amazon",
@@ -156,7 +156,11 @@
         }
       ],
       "source": "live",
-      "next_earnings": null
+      "next_earnings": {
+        "date": "2026-10-29",
+        "source": "Yahoo",
+        "as_of": "2026-08-25"
+      }
     },
     {
       "company": "Alphabet",
@@ -170,14 +174,14 @@
       "target": 390,
       "currency": "USD",
       "report_url": "",
-      "status": "open",
-      "live_price": 348.06,
-      "as_of": "2026-08-25",
-      "return_pct": -2.5,
-      "benchmark_return_pct": 2.05,
-      "alpha": -4.55,
-      "target_distance_pct": 12.05,
-      "hit": null,
+      "status": "closed",
+      "live_price": 363,
+      "as_of": "2026-08-05",
+      "return_pct": 1.68,
+      "benchmark_return_pct": 2.99,
+      "alpha": -1.31,
+      "target_distance_pct": 7.44,
+      "hit": false,
       "series": [
         {
           "d": "2026-06-30",
@@ -282,58 +286,6 @@
         {
           "d": "2026-08-05",
           "c": 362.43
-        },
-        {
-          "d": "2026-08-06",
-          "c": 357.75
-        },
-        {
-          "d": "2026-08-07",
-          "c": 354.3
-        },
-        {
-          "d": "2026-08-10",
-          "c": 357.52
-        },
-        {
-          "d": "2026-08-11",
-          "c": 343.8
-        },
-        {
-          "d": "2026-08-12",
-          "c": 343.54
-        },
-        {
-          "d": "2026-08-13",
-          "c": 346.36
-        },
-        {
-          "d": "2026-08-14",
-          "c": 345.9
-        },
-        {
-          "d": "2026-08-17",
-          "c": 344.0
-        },
-        {
-          "d": "2026-08-18",
-          "c": 344.2
-        },
-        {
-          "d": "2026-08-19",
-          "c": 344.72
-        },
-        {
-          "d": "2026-08-20",
-          "c": 340.67
-        },
-        {
-          "d": "2026-08-21",
-          "c": 344.82
-        },
-        {
-          "d": "2026-08-24",
-          "c": 348.06
         }
       ],
       "source": "live",
@@ -351,14 +303,14 @@
       "target": 373,
       "currency": "USD",
       "report_url": "",
-      "status": "open",
-      "live_price": 382.41,
-      "as_of": "2026-08-25",
-      "return_pct": 17.8,
-      "benchmark_return_pct": 1.3,
-      "alpha": 16.5,
-      "target_distance_pct": -2.46,
-      "hit": null,
+      "status": "closed",
+      "live_price": 356,
+      "as_of": "2026-07-18",
+      "return_pct": 9.67,
+      "benchmark_return_pct": -1.28,
+      "alpha": 10.95,
+      "target_distance_pct": 4.78,
+      "hit": false,
       "series": [
         {
           "d": "2026-06-15",
@@ -451,7 +403,218 @@
         {
           "d": "2026-07-17",
           "c": 358.56
+        }
+      ],
+      "source": "live",
+      "next_earnings": null
+    },
+    {
+      "company": "Coca-Cola",
+      "ticker": "KO",
+      "yahoo_symbol": "KO",
+      "market": "US",
+      "benchmark": "S&P 500",
+      "call_date": "2026-06-30",
+      "rating": "ACCUMULATE",
+      "price_at_call": 81.3,
+      "target": 87,
+      "currency": "USD",
+      "report_url": "",
+      "status": "closed",
+      "live_price": 87,
+      "as_of": "2026-07-28",
+      "return_pct": 7.01,
+      "benchmark_return_pct": -0.94,
+      "alpha": 7.95,
+      "target_distance_pct": 0.0,
+      "hit": true,
+      "series": [
+        {
+          "d": "2026-06-30",
+          "c": 81.27
         },
+        {
+          "d": "2026-07-01",
+          "c": 81.29
+        },
+        {
+          "d": "2026-07-02",
+          "c": 84.14
+        },
+        {
+          "d": "2026-07-06",
+          "c": 82.96
+        },
+        {
+          "d": "2026-07-07",
+          "c": 84.05
+        },
+        {
+          "d": "2026-07-08",
+          "c": 83.4
+        },
+        {
+          "d": "2026-07-09",
+          "c": 82.63
+        },
+        {
+          "d": "2026-07-10",
+          "c": 83.49
+        },
+        {
+          "d": "2026-07-13",
+          "c": 84.25
+        },
+        {
+          "d": "2026-07-14",
+          "c": 83.08
+        },
+        {
+          "d": "2026-07-15",
+          "c": 82.45
+        },
+        {
+          "d": "2026-07-16",
+          "c": 84.92
+        },
+        {
+          "d": "2026-07-17",
+          "c": 81.56
+        },
+        {
+          "d": "2026-07-20",
+          "c": 82.12
+        },
+        {
+          "d": "2026-07-21",
+          "c": 81.97
+        },
+        {
+          "d": "2026-07-22",
+          "c": 82.2
+        },
+        {
+          "d": "2026-07-23",
+          "c": 81.17
+        },
+        {
+          "d": "2026-07-24",
+          "c": 82.25
+        },
+        {
+          "d": "2026-07-27",
+          "c": 84.07
+        },
+        {
+          "d": "2026-07-28",
+          "c": 88.27
+        }
+      ],
+      "source": "live",
+      "next_earnings": null
+    },
+    {
+      "company": "Alphabet",
+      "ticker": "GOOGL",
+      "yahoo_symbol": "GOOGL",
+      "market": "US",
+      "benchmark": "S&P 500",
+      "call_date": "2026-08-05",
+      "rating": "HOLD",
+      "price_at_call": 363,
+      "target": 384,
+      "currency": "USD",
+      "report_url": "",
+      "status": "open",
+      "live_price": 348.06,
+      "as_of": "2026-08-25",
+      "return_pct": -4.12,
+      "benchmark_return_pct": -0.92,
+      "alpha": -3.2,
+      "target_distance_pct": 10.33,
+      "hit": null,
+      "series": [
+        {
+          "d": "2026-08-05",
+          "c": 362.43
+        },
+        {
+          "d": "2026-08-06",
+          "c": 357.75
+        },
+        {
+          "d": "2026-08-07",
+          "c": 354.3
+        },
+        {
+          "d": "2026-08-10",
+          "c": 357.52
+        },
+        {
+          "d": "2026-08-11",
+          "c": 343.8
+        },
+        {
+          "d": "2026-08-12",
+          "c": 343.54
+        },
+        {
+          "d": "2026-08-13",
+          "c": 346.36
+        },
+        {
+          "d": "2026-08-14",
+          "c": 345.9
+        },
+        {
+          "d": "2026-08-17",
+          "c": 344.0
+        },
+        {
+          "d": "2026-08-18",
+          "c": 344.2
+        },
+        {
+          "d": "2026-08-19",
+          "c": 344.72
+        },
+        {
+          "d": "2026-08-20",
+          "c": 340.67
+        },
+        {
+          "d": "2026-08-21",
+          "c": 344.82
+        },
+        {
+          "d": "2026-08-24",
+          "c": 348.06
+        }
+      ],
+      "source": "live",
+      "next_earnings": null
+    },
+    {
+      "company": "Visa",
+      "ticker": "V",
+      "yahoo_symbol": "V",
+      "market": "US",
+      "benchmark": "S&P 500",
+      "call_date": "2026-07-18",
+      "rating": "HOLD",
+      "price_at_call": 356,
+      "target": 355,
+      "currency": "USD",
+      "report_url": "",
+      "status": "open",
+      "live_price": 382.41,
+      "as_of": "2026-08-25",
+      "return_pct": 7.42,
+      "benchmark_return_pct": 2.62,
+      "alpha": 4.8,
+      "target_distance_pct": -7.17,
+      "hit": null,
+      "series": [
         {
           "d": "2026-07-20",
           "c": 360.57
@@ -566,97 +729,21 @@
       "yahoo_symbol": "KO",
       "market": "US",
       "benchmark": "S&P 500",
-      "call_date": "2026-06-30",
-      "rating": "ACCUMULATE",
-      "price_at_call": 81.3,
-      "target": 87,
+      "call_date": "2026-07-28",
+      "rating": "HOLD",
+      "price_at_call": 87,
+      "target": 86,
       "currency": "USD",
       "report_url": "",
       "status": "open",
       "live_price": 91.99,
       "as_of": "2026-08-25",
-      "return_pct": 13.15,
-      "benchmark_return_pct": 2.05,
-      "alpha": 11.1,
-      "target_distance_pct": -5.42,
+      "return_pct": 5.74,
+      "benchmark_return_pct": 3.02,
+      "alpha": 2.72,
+      "target_distance_pct": -6.51,
       "hit": null,
       "series": [
-        {
-          "d": "2026-06-30",
-          "c": 81.27
-        },
-        {
-          "d": "2026-07-01",
-          "c": 81.29
-        },
-        {
-          "d": "2026-07-02",
-          "c": 84.14
-        },
-        {
-          "d": "2026-07-06",
-          "c": 82.96
-        },
-        {
-          "d": "2026-07-07",
-          "c": 84.05
-        },
-        {
-          "d": "2026-07-08",
-          "c": 83.4
-        },
-        {
-          "d": "2026-07-09",
-          "c": 82.63
-        },
-        {
-          "d": "2026-07-10",
-          "c": 83.49
-        },
-        {
-          "d": "2026-07-13",
-          "c": 84.25
-        },
-        {
-          "d": "2026-07-14",
-          "c": 83.08
-        },
-        {
-          "d": "2026-07-15",
-          "c": 82.45
-        },
-        {
-          "d": "2026-07-16",
-          "c": 84.92
-        },
-        {
-          "d": "2026-07-17",
-          "c": 81.56
-        },
-        {
-          "d": "2026-07-20",
-          "c": 82.12
-        },
-        {
-          "d": "2026-07-21",
-          "c": 81.97
-        },
-        {
-          "d": "2026-07-22",
-          "c": 82.2
-        },
-        {
-          "d": "2026-07-23",
-          "c": 81.17
-        },
-        {
-          "d": "2026-07-24",
-          "c": 82.25
-        },
-        {
-          "d": "2026-07-27",
-          "c": 84.07
-        },
         {
           "d": "2026-07-28",
           "c": 88.27
@@ -739,11 +826,141 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-20",
-        "source": "Yahoo",
-        "as_of": "2026-08-25"
-      }
+      "next_earnings": null
+    },
+    {
+      "company": "Microsoft",
+      "ticker": "MSFT",
+      "yahoo_symbol": "MSFT",
+      "market": "US",
+      "benchmark": "S&P 500",
+      "call_date": "2026-08-05",
+      "rating": "HOLD",
+      "price_at_call": 488.63,
+      "target": 488,
+      "currency": "USD",
+      "report_url": "",
+      "status": "open",
+      "live_price": 487.31,
+      "as_of": "2026-08-25",
+      "return_pct": -0.27,
+      "benchmark_return_pct": -0.92,
+      "alpha": 0.65,
+      "target_distance_pct": 0.14,
+      "hit": null,
+      "series": [
+        {
+          "d": "2026-08-05",
+          "c": 487.46
+        },
+        {
+          "d": "2026-08-06",
+          "c": 499.86
+        },
+        {
+          "d": "2026-08-07",
+          "c": 499.99
+        },
+        {
+          "d": "2026-08-10",
+          "c": 506.06
+        },
+        {
+          "d": "2026-08-11",
+          "c": 503.81
+        },
+        {
+          "d": "2026-08-12",
+          "c": 492.43
+        },
+        {
+          "d": "2026-08-13",
+          "c": 496.88
+        },
+        {
+          "d": "2026-08-14",
+          "c": 495.4
+        },
+        {
+          "d": "2026-08-17",
+          "c": 480.35
+        },
+        {
+          "d": "2026-08-18",
+          "c": 481.63
+        },
+        {
+          "d": "2026-08-19",
+          "c": 484.31
+        },
+        {
+          "d": "2026-08-20",
+          "c": 481.15
+        },
+        {
+          "d": "2026-08-21",
+          "c": 483.24
+        },
+        {
+          "d": "2026-08-24",
+          "c": 487.31
+        }
+      ],
+      "source": "live",
+      "next_earnings": null
+    },
+    {
+      "company": "JPMorgan Chase",
+      "ticker": "JPM",
+      "yahoo_symbol": "JPM",
+      "market": "US",
+      "benchmark": "S&P 500",
+      "call_date": "2026-08-14",
+      "rating": "REDUCE",
+      "price_at_call": 362.84,
+      "target": 323,
+      "currency": "USD",
+      "report_url": "",
+      "status": "open",
+      "live_price": 356.39,
+      "as_of": "2026-08-25",
+      "return_pct": -1.78,
+      "benchmark_return_pct": -1.71,
+      "alpha": -0.07,
+      "target_distance_pct": -9.37,
+      "hit": null,
+      "series": [
+        {
+          "d": "2026-08-14",
+          "c": 362.84
+        },
+        {
+          "d": "2026-08-17",
+          "c": 360.96
+        },
+        {
+          "d": "2026-08-18",
+          "c": 363.25
+        },
+        {
+          "d": "2026-08-19",
+          "c": 357.26
+        },
+        {
+          "d": "2026-08-20",
+          "c": 351.55
+        },
+        {
+          "d": "2026-08-21",
+          "c": 351.58
+        },
+        {
+          "d": "2026-08-24",
+          "c": 356.39
+        }
+      ],
+      "source": "live",
+      "next_earnings": null
     }
   ]
 }
