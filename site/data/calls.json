@@ -1,5 +1,5 @@
 {
-  "updated_at": "30 Aug 2026 10:36 UTC",
+  "updated_at": "31 Aug 2026 11:46 UTC",
   "calls": [
     {
       "company": "Amazon",
@@ -15,7 +15,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 266.43,
-      "as_of": "2026-08-30",
+      "as_of": "2026-08-31",
       "return_pct": 7.87,
       "benchmark_return_pct": 2.23,
       "alpha": 5.64,
@@ -523,11 +523,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-20",
-        "source": "Yahoo",
-        "as_of": "2026-08-30"
-      }
+      "next_earnings": null
     },
     {
       "company": "Alphabet",
@@ -543,7 +539,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 346.59,
-      "as_of": "2026-08-30",
+      "as_of": "2026-08-31",
       "return_pct": -4.52,
       "benchmark_return_pct": -0.15,
       "alpha": -4.37,
@@ -640,7 +636,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 381.6,
-      "as_of": "2026-08-30",
+      "as_of": "2026-08-31",
       "return_pct": 7.19,
       "benchmark_return_pct": 3.41,
       "alpha": 3.78,
@@ -785,7 +781,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 89.66,
-      "as_of": "2026-08-30",
+      "as_of": "2026-08-31",
       "return_pct": 3.06,
       "benchmark_return_pct": 3.81,
       "alpha": -0.75,
@@ -890,11 +886,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-20",
-        "source": "Yahoo",
-        "as_of": "2026-08-30"
-      }
+      "next_earnings": null
     },
     {
       "company": "Microsoft",
@@ -910,7 +902,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 513.53,
-      "as_of": "2026-08-30",
+      "as_of": "2026-08-31",
       "return_pct": 5.1,
       "benchmark_return_pct": -0.15,
       "alpha": 5.25,
@@ -1007,7 +999,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 357.62,
-      "as_of": "2026-08-30",
+      "as_of": "2026-08-31",
       "return_pct": -1.44,
       "benchmark_return_pct": -0.95,
       "alpha": -0.49,
@@ -1060,7 +1052,11 @@
         }
       ],
       "source": "live",
-      "next_earnings": null
+      "next_earnings": {
+        "date": "2026-10-13",
+        "source": "Yahoo",
+        "as_of": "2026-08-31"
+      }
     }
   ]
 }
