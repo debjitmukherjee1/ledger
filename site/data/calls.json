@@ -1,5 +1,5 @@
 {
-  "updated_at": "31 Aug 2026 11:46 UTC",
+  "updated_at": "01 Sep 2026 10:21 UTC",
   "calls": [
     {
       "company": "Amazon",
@@ -14,12 +14,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 266.43,
-      "as_of": "2026-08-31",
-      "return_pct": 7.87,
-      "benchmark_return_pct": 2.23,
-      "alpha": 5.64,
-      "target_distance_pct": 3.22,
+      "live_price": 259.77,
+      "as_of": "2026-09-01",
+      "return_pct": 5.17,
+      "benchmark_return_pct": 1.89,
+      "alpha": 3.28,
+      "target_distance_pct": 5.86,
       "hit": null,
       "series": [
         {
@@ -169,6 +169,10 @@
         {
           "d": "2026-08-28",
           "c": 266.43
+        },
+        {
+          "d": "2026-08-31",
+          "c": 259.77
         }
       ],
       "source": "live",
@@ -418,7 +422,11 @@
         }
       ],
       "source": "live",
-      "next_earnings": null
+      "next_earnings": {
+        "date": "2026-10-27",
+        "source": "Yahoo",
+        "as_of": "2026-09-01"
+      }
     },
     {
       "company": "Coca-Cola",
@@ -538,12 +546,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 346.59,
-      "as_of": "2026-08-31",
-      "return_pct": -4.52,
-      "benchmark_return_pct": -0.15,
-      "alpha": -4.37,
-      "target_distance_pct": 10.79,
+      "live_price": 339.35,
+      "as_of": "2026-09-01",
+      "return_pct": -6.52,
+      "benchmark_return_pct": -0.48,
+      "alpha": -6.04,
+      "target_distance_pct": 13.16,
       "hit": null,
       "series": [
         {
@@ -617,6 +625,10 @@
         {
           "d": "2026-08-28",
           "c": 346.59
+        },
+        {
+          "d": "2026-08-31",
+          "c": 339.35
         }
       ],
       "source": "live",
@@ -635,12 +647,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 381.6,
-      "as_of": "2026-08-31",
-      "return_pct": 7.19,
-      "benchmark_return_pct": 3.41,
-      "alpha": 3.78,
-      "target_distance_pct": -6.97,
+      "live_price": 379.37,
+      "as_of": "2026-09-01",
+      "return_pct": 6.56,
+      "benchmark_return_pct": 3.06,
+      "alpha": 3.5,
+      "target_distance_pct": -6.42,
       "hit": null,
       "series": [
         {
@@ -762,10 +774,18 @@
         {
           "d": "2026-08-28",
           "c": 381.6
+        },
+        {
+          "d": "2026-08-31",
+          "c": 379.37
         }
       ],
       "source": "live",
-      "next_earnings": null
+      "next_earnings": {
+        "date": "2026-10-27",
+        "source": "Yahoo",
+        "as_of": "2026-09-01"
+      }
     },
     {
       "company": "Coca-Cola",
@@ -780,12 +800,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 89.66,
-      "as_of": "2026-08-31",
-      "return_pct": 3.06,
-      "benchmark_return_pct": 3.81,
-      "alpha": -0.75,
-      "target_distance_pct": -4.08,
+      "live_price": 88.67,
+      "as_of": "2026-09-01",
+      "return_pct": 1.92,
+      "benchmark_return_pct": 3.46,
+      "alpha": -1.54,
+      "target_distance_pct": -3.01,
       "hit": null,
       "series": [
         {
@@ -883,6 +903,10 @@
         {
           "d": "2026-08-28",
           "c": 89.66
+        },
+        {
+          "d": "2026-08-31",
+          "c": 88.67
         }
       ],
       "source": "live",
@@ -901,12 +925,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 513.53,
-      "as_of": "2026-08-31",
-      "return_pct": 5.1,
-      "benchmark_return_pct": -0.15,
-      "alpha": 5.25,
-      "target_distance_pct": -4.97,
+      "live_price": 507.29,
+      "as_of": "2026-09-01",
+      "return_pct": 3.82,
+      "benchmark_return_pct": -0.48,
+      "alpha": 4.3,
+      "target_distance_pct": -3.8,
       "hit": null,
       "series": [
         {
@@ -980,6 +1004,10 @@
         {
           "d": "2026-08-28",
           "c": 513.53
+        },
+        {
+          "d": "2026-08-31",
+          "c": 507.29
         }
       ],
       "source": "live",
@@ -998,12 +1026,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 357.62,
-      "as_of": "2026-08-31",
-      "return_pct": -1.44,
-      "benchmark_return_pct": -0.95,
-      "alpha": -0.49,
-      "target_distance_pct": -9.68,
+      "live_price": 356.02,
+      "as_of": "2026-09-01",
+      "return_pct": -1.88,
+      "benchmark_return_pct": -1.28,
+      "alpha": -0.6,
+      "target_distance_pct": -9.27,
       "hit": null,
       "series": [
         {
@@ -1049,14 +1077,14 @@
         {
           "d": "2026-08-28",
           "c": 357.62
+        },
+        {
+          "d": "2026-08-31",
+          "c": 356.02
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-13",
-        "source": "Yahoo",
-        "as_of": "2026-08-31"
-      }
+      "next_earnings": null
     }
   ]
 }
