@@ -1,5 +1,5 @@
 {
-  "updated_at": "26 Sep 2026 10:07 UTC",
+  "updated_at": "27 Sep 2026 10:41 UTC",
   "calls": [
     {
       "company": "Tata Consultancy Services",
@@ -15,7 +15,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 2082.0,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": -5.32,
       "benchmark_return_pct": -4.25,
       "alpha": -1.07,
@@ -328,7 +328,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 735.6,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": -6.28,
       "benchmark_return_pct": -3.81,
       "alpha": -2.47,
@@ -846,7 +846,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1000.2,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": -3.91,
       "benchmark_return_pct": -4.28,
       "alpha": 0.37,
@@ -1320,7 +1320,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1326.8,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": -5.97,
       "benchmark_return_pct": -5.28,
       "alpha": -0.69,
@@ -1585,7 +1585,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 249.67,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": 1.08,
       "benchmark_return_pct": 2.65,
       "alpha": -1.57,
@@ -2169,11 +2169,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-20",
-        "source": "Yahoo",
-        "as_of": "2026-09-26"
-      }
+      "next_earnings": null
     },
     {
       "company": "Hindustan Unilever",
@@ -2189,7 +2185,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1942.9,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": -8.81,
       "benchmark_return_pct": -3.79,
       "alpha": -5.02,
@@ -2430,7 +2426,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 343.92,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": -5.26,
       "benchmark_return_pct": 0.26,
       "alpha": -5.52,
@@ -2603,7 +2599,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 367.38,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": 3.2,
       "benchmark_return_pct": 3.83,
       "alpha": -0.63,
@@ -2824,7 +2820,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 87.81,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": 0.93,
       "benchmark_return_pct": 4.24,
       "alpha": -3.31,
@@ -3005,11 +3001,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-20",
-        "source": "Yahoo",
-        "as_of": "2026-09-26"
-      }
+      "next_earnings": null
     },
     {
       "company": "Reliance Industries",
@@ -3025,7 +3017,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1226.0,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": -5.84,
       "benchmark_return_pct": -5.99,
       "alpha": 0.15,
@@ -3206,7 +3198,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 516.17,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": 5.64,
       "benchmark_return_pct": 0.26,
       "alpha": 5.38,
@@ -3379,7 +3371,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 343.06,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": -5.45,
       "benchmark_return_pct": -0.54,
       "alpha": -4.91,
@@ -3524,7 +3516,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 996.9,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": -7.52,
       "benchmark_return_pct": -5.82,
       "alpha": -1.7,
@@ -3693,7 +3685,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 12065.0,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": -11.88,
       "benchmark_return_pct": -4.2,
       "alpha": -7.68,
@@ -3818,7 +3810,11 @@
         }
       ],
       "source": "live",
-      "next_earnings": null
+      "next_earnings": {
+        "date": "2026-10-29",
+        "source": "Yahoo",
+        "as_of": "2026-09-27"
+      }
     }
   ]
 }
