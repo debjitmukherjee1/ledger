@@ -1,5 +1,5 @@
 {
-  "updated_at": "26 Sep 2026 10:07 UTC",
+  "updated_at": "27 Sep 2026 10:41 UTC",
   "calls": [
     {
       "company": "Amazon",
@@ -15,7 +15,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 249.67,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": 1.08,
       "benchmark_return_pct": 2.65,
       "alpha": -1.57,
@@ -599,11 +599,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-20",
-        "source": "Yahoo",
-        "as_of": "2026-09-26"
-      }
+      "next_earnings": null
     },
     {
       "company": "Alphabet",
@@ -619,7 +615,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 343.92,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": -5.26,
       "benchmark_return_pct": 0.26,
       "alpha": -5.52,
@@ -792,7 +788,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 367.38,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": 3.2,
       "benchmark_return_pct": 3.83,
       "alpha": -0.63,
@@ -1013,7 +1009,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 87.81,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": 0.93,
       "benchmark_return_pct": 4.24,
       "alpha": -3.31,
@@ -1194,11 +1190,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-20",
-        "source": "Yahoo",
-        "as_of": "2026-09-26"
-      }
+      "next_earnings": null
     },
     {
       "company": "Microsoft",
@@ -1214,7 +1206,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 516.17,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": 5.64,
       "benchmark_return_pct": 0.26,
       "alpha": 5.38,
@@ -1387,7 +1379,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 343.06,
-      "as_of": "2026-09-26",
+      "as_of": "2026-09-27",
       "return_pct": -5.45,
       "benchmark_return_pct": -0.54,
       "alpha": -4.91,
