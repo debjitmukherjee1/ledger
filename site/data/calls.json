@@ -1,5 +1,5 @@
 {
-  "updated_at": "03 Oct 2026 10:32 UTC",
+  "updated_at": "04 Oct 2026 11:14 UTC",
   "calls": [
     {
       "company": "Tata Consultancy Services",
@@ -15,7 +15,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 2075.0,
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "return_pct": -5.64,
       "benchmark_return_pct": -7.22,
       "alpha": 1.58,
@@ -344,7 +344,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 721.2,
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "return_pct": -8.12,
       "benchmark_return_pct": -6.79,
       "alpha": -1.33,
@@ -878,7 +878,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1035.0,
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "return_pct": -0.57,
       "benchmark_return_pct": -7.25,
       "alpha": 6.68,
@@ -1355,7 +1355,7 @@
       "next_earnings": {
         "date": "2026-10-17",
         "source": "Yahoo",
-        "as_of": "2026-10-03"
+        "as_of": "2026-10-04"
       }
     },
     {
@@ -1372,7 +1372,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1310.6,
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "return_pct": -7.12,
       "benchmark_return_pct": -8.22,
       "alpha": 1.1,
@@ -1640,7 +1640,7 @@
       "next_earnings": {
         "date": "2026-10-17",
         "source": "Yahoo",
-        "as_of": "2026-10-03"
+        "as_of": "2026-10-04"
       }
     },
     {
@@ -1657,7 +1657,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 251.52,
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "return_pct": 1.83,
       "benchmark_return_pct": 2.37,
       "alpha": -0.54,
@@ -2277,7 +2277,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1836.0,
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "return_pct": -13.83,
       "benchmark_return_pct": -6.78,
       "alpha": -7.05,
@@ -2534,7 +2534,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 343.5,
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "return_pct": -5.37,
       "benchmark_return_pct": -0.01,
       "alpha": -5.36,
@@ -2727,7 +2727,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 360.66,
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "return_pct": 1.31,
       "benchmark_return_pct": 3.55,
       "alpha": -2.24,
@@ -2968,7 +2968,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 85.65,
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "return_pct": -1.55,
       "benchmark_return_pct": 3.96,
       "alpha": -5.51,
@@ -3185,7 +3185,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1167.7,
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "return_pct": -10.31,
       "benchmark_return_pct": -8.91,
       "alpha": -1.4,
@@ -3382,7 +3382,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 517.53,
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "return_pct": 5.91,
       "benchmark_return_pct": -0.01,
       "alpha": 5.92,
@@ -3575,7 +3575,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 332.38,
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "return_pct": -8.39,
       "benchmark_return_pct": -0.81,
       "alpha": -7.58,
@@ -3740,7 +3740,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 948.3,
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "return_pct": -12.03,
       "benchmark_return_pct": -8.74,
       "alpha": -3.29,
@@ -3925,7 +3925,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 11386.0,
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "return_pct": -16.84,
       "benchmark_return_pct": -7.17,
       "alpha": -9.67,
