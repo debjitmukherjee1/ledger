@@ -1,5 +1,5 @@
 {
-  "updated_at": "05 Oct 2026 12:32 UTC",
+  "updated_at": "06 Oct 2026 12:10 UTC",
   "calls": [
     {
       "company": "Amazon",
@@ -14,12 +14,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 251.52,
-      "as_of": "2026-10-05",
-      "return_pct": 1.83,
-      "benchmark_return_pct": 2.37,
-      "alpha": -0.54,
-      "target_distance_pct": 9.34,
+      "live_price": 251.4,
+      "as_of": "2026-10-06",
+      "return_pct": 1.78,
+      "benchmark_return_pct": 3.05,
+      "alpha": -1.27,
+      "target_distance_pct": 9.39,
       "hit": null,
       "series": [
         {
@@ -265,6 +265,10 @@
         {
           "d": "2026-10-02",
           "c": 251.52
+        },
+        {
+          "d": "2026-10-05",
+          "c": 251.4
         }
       ],
       "source": "live",
@@ -634,12 +638,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 343.5,
-      "as_of": "2026-10-05",
-      "return_pct": -5.37,
-      "benchmark_return_pct": -0.01,
-      "alpha": -5.36,
-      "target_distance_pct": 11.79,
+      "live_price": 346.47,
+      "as_of": "2026-10-06",
+      "return_pct": -4.55,
+      "benchmark_return_pct": 0.65,
+      "alpha": -5.2,
+      "target_distance_pct": 10.83,
       "hit": null,
       "series": [
         {
@@ -809,6 +813,10 @@
         {
           "d": "2026-10-02",
           "c": 343.5
+        },
+        {
+          "d": "2026-10-05",
+          "c": 346.47
         }
       ],
       "source": "live",
@@ -827,12 +835,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 360.66,
-      "as_of": "2026-10-05",
-      "return_pct": 1.31,
-      "benchmark_return_pct": 3.55,
-      "alpha": -2.24,
-      "target_distance_pct": -1.57,
+      "live_price": 369.71,
+      "as_of": "2026-10-06",
+      "return_pct": 3.85,
+      "benchmark_return_pct": 4.24,
+      "alpha": -0.39,
+      "target_distance_pct": -3.98,
       "hit": null,
       "series": [
         {
@@ -1050,6 +1058,10 @@
         {
           "d": "2026-10-02",
           "c": 360.66
+        },
+        {
+          "d": "2026-10-05",
+          "c": 369.71
         }
       ],
       "source": "live",
@@ -1068,12 +1080,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 85.65,
-      "as_of": "2026-10-05",
-      "return_pct": -1.55,
-      "benchmark_return_pct": 3.96,
-      "alpha": -5.51,
-      "target_distance_pct": 0.41,
+      "live_price": 86.51,
+      "as_of": "2026-10-06",
+      "return_pct": -0.56,
+      "benchmark_return_pct": 4.65,
+      "alpha": -5.21,
+      "target_distance_pct": -0.59,
       "hit": null,
       "series": [
         {
@@ -1267,6 +1279,10 @@
         {
           "d": "2026-10-02",
           "c": 85.65
+        },
+        {
+          "d": "2026-10-05",
+          "c": 86.51
         }
       ],
       "source": "live",
@@ -1285,12 +1301,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 517.53,
-      "as_of": "2026-10-05",
-      "return_pct": 5.91,
-      "benchmark_return_pct": -0.01,
-      "alpha": 5.92,
-      "target_distance_pct": -5.71,
+      "live_price": 525.18,
+      "as_of": "2026-10-06",
+      "return_pct": 7.48,
+      "benchmark_return_pct": 0.65,
+      "alpha": 6.83,
+      "target_distance_pct": -7.08,
       "hit": null,
       "series": [
         {
@@ -1460,6 +1476,10 @@
         {
           "d": "2026-10-02",
           "c": 517.53
+        },
+        {
+          "d": "2026-10-05",
+          "c": 525.18
         }
       ],
       "source": "live",
@@ -1479,10 +1499,10 @@
       "report_url": "",
       "status": "open",
       "live_price": 332.38,
-      "as_of": "2026-10-05",
+      "as_of": "2026-10-06",
       "return_pct": -8.39,
-      "benchmark_return_pct": -0.81,
-      "alpha": -7.58,
+      "benchmark_return_pct": -0.15,
+      "alpha": -8.24,
       "target_distance_pct": -2.82,
       "hit": null,
       "series": [
@@ -1624,6 +1644,10 @@
         },
         {
           "d": "2026-10-02",
+          "c": 332.38
+        },
+        {
+          "d": "2026-10-05",
           "c": 332.38
         }
       ],
