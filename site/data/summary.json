@@ -1,9 +1,9 @@
 {
-  "updated_at": "07 Oct 2026 11:56 UTC",
+  "updated_at": "08 Oct 2026 12:11 UTC",
   "total_calls": 19,
   "closed_calls": 5,
   "hit_rate_pct": 20.0,
-  "average_alpha_pct": -0.93,
+  "average_alpha_pct": -0.5,
   "best_call": {
     "company": "Visa",
     "rating": "BUY",
