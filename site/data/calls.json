@@ -1,5 +1,5 @@
 {
-  "updated_at": "13 Oct 2026 12:53 UTC",
+  "updated_at": "14 Oct 2026 10:29 UTC",
   "calls": [
     {
       "company": "Amazon",
@@ -14,12 +14,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 259.53,
-      "as_of": "2026-10-13",
-      "return_pct": 5.07,
-      "benchmark_return_pct": 3.49,
-      "alpha": 1.58,
-      "target_distance_pct": 5.96,
+      "live_price": 258.58,
+      "as_of": "2026-10-14",
+      "return_pct": 4.69,
+      "benchmark_return_pct": 3.47,
+      "alpha": 1.22,
+      "target_distance_pct": 6.35,
       "hit": null,
       "series": [
         {
@@ -289,6 +289,10 @@
         {
           "d": "2026-10-12",
           "c": 259.53
+        },
+        {
+          "d": "2026-10-13",
+          "c": 258.58
         }
       ],
       "source": "live",
@@ -658,12 +662,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 352.72,
-      "as_of": "2026-10-13",
-      "return_pct": -2.83,
-      "benchmark_return_pct": 1.08,
-      "alpha": -3.91,
-      "target_distance_pct": 8.87,
+      "live_price": 353.78,
+      "as_of": "2026-10-14",
+      "return_pct": -2.54,
+      "benchmark_return_pct": 1.06,
+      "alpha": -3.6,
+      "target_distance_pct": 8.54,
       "hit": null,
       "series": [
         {
@@ -857,6 +861,10 @@
         {
           "d": "2026-10-12",
           "c": 352.72
+        },
+        {
+          "d": "2026-10-13",
+          "c": 353.78
         }
       ],
       "source": "live",
@@ -875,12 +883,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 389.27,
-      "as_of": "2026-10-13",
-      "return_pct": 9.35,
-      "benchmark_return_pct": 4.69,
-      "alpha": 4.66,
-      "target_distance_pct": -8.8,
+      "live_price": 396.06,
+      "as_of": "2026-10-14",
+      "return_pct": 11.25,
+      "benchmark_return_pct": 4.66,
+      "alpha": 6.59,
+      "target_distance_pct": -10.37,
       "hit": null,
       "series": [
         {
@@ -1122,6 +1130,10 @@
         {
           "d": "2026-10-12",
           "c": 389.27
+        },
+        {
+          "d": "2026-10-13",
+          "c": 396.06
         }
       ],
       "source": "live",
@@ -1140,12 +1152,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 89.79,
-      "as_of": "2026-10-13",
-      "return_pct": 3.21,
-      "benchmark_return_pct": 5.09,
-      "alpha": -1.88,
-      "target_distance_pct": -4.22,
+      "live_price": 90.11,
+      "as_of": "2026-10-14",
+      "return_pct": 3.57,
+      "benchmark_return_pct": 5.07,
+      "alpha": -1.5,
+      "target_distance_pct": -4.56,
       "hit": null,
       "series": [
         {
@@ -1363,6 +1375,10 @@
         {
           "d": "2026-10-12",
           "c": 89.79
+        },
+        {
+          "d": "2026-10-13",
+          "c": 90.11
         }
       ],
       "source": "live",
@@ -1381,12 +1397,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 541.15,
-      "as_of": "2026-10-13",
-      "return_pct": 10.75,
-      "benchmark_return_pct": 1.08,
-      "alpha": 9.67,
-      "target_distance_pct": -9.82,
+      "live_price": 543.45,
+      "as_of": "2026-10-14",
+      "return_pct": 11.22,
+      "benchmark_return_pct": 1.06,
+      "alpha": 10.16,
+      "target_distance_pct": -10.2,
       "hit": null,
       "series": [
         {
@@ -1580,6 +1596,10 @@
         {
           "d": "2026-10-12",
           "c": 541.15
+        },
+        {
+          "d": "2026-10-13",
+          "c": 543.45
         }
       ],
       "source": "live",
@@ -1598,12 +1618,12 @@
       "currency": "USD",
       "report_url": "",
       "status": "open",
-      "live_price": 334.3,
-      "as_of": "2026-10-13",
-      "return_pct": -7.87,
-      "benchmark_return_pct": 0.28,
-      "alpha": -8.15,
-      "target_distance_pct": -3.38,
+      "live_price": 331.43,
+      "as_of": "2026-10-14",
+      "return_pct": -8.66,
+      "benchmark_return_pct": 0.25,
+      "alpha": -8.91,
+      "target_distance_pct": -2.54,
       "hit": null,
       "series": [
         {
@@ -1769,6 +1789,10 @@
         {
           "d": "2026-10-12",
           "c": 334.3
+        },
+        {
+          "d": "2026-10-13",
+          "c": 331.43
         }
       ],
       "source": "live",
