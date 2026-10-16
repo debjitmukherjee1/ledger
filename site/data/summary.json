@@ -1,14 +1,14 @@
 {
-  "updated_at": "15 Oct 2026 10:13 UTC",
+  "updated_at": "16 Oct 2026 10:03 UTC",
   "total_calls": 19,
   "closed_calls": 5,
   "hit_rate_pct": 20.0,
-  "average_alpha_pct": 1.14,
+  "average_alpha_pct": 1.67,
   "best_call": {
     "company": "Tata Consultancy Services",
     "rating": "BUY",
     "call_date": "2026-06-18",
-    "alpha": 11.71
+    "alpha": 16.33
   },
   "worst_call": {
     "company": "Infosys",
