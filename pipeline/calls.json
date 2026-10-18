@@ -264,5 +264,47 @@
     "currency": "INR",
     "report_url": "",
     "status": "open"
+  },
+  {
+    "company": "NVIDIA",
+    "ticker": "NVDA",
+    "yahoo_symbol": "NVDA",
+    "market": "US",
+    "benchmark": "S&P 500",
+    "call_date": "2026-08-27",
+    "rating": "REDUCE",
+    "price_at_call": 227.98,
+    "target": 200,
+    "currency": "USD",
+    "report_url": "",
+    "status": "open"
+  },
+  {
+    "company": "Sun Pharmaceutical Industries",
+    "ticker": "SUNPHARMA",
+    "yahoo_symbol": "SUNPHARMA.NS",
+    "market": "India",
+    "benchmark": "Nifty 50",
+    "call_date": "2026-09-04",
+    "rating": "REDUCE",
+    "price_at_call": 1899,
+    "target": 1503,
+    "currency": "INR",
+    "report_url": "",
+    "status": "open"
+  },
+  {
+    "company": "Larsen & Toubro",
+    "ticker": "LT",
+    "yahoo_symbol": "LT.NS",
+    "market": "India",
+    "benchmark": "Nifty 50",
+    "call_date": "2026-09-16",
+    "rating": "REDUCE",
+    "price_at_call": 3820,
+    "target": 2956,
+    "currency": "INR",
+    "report_url": "",
+    "status": "open"
   }
 ]
