@@ -1,5 +1,5 @@
 {
-  "updated_at": "17 Oct 2026 09:36 UTC",
+  "updated_at": "18 Oct 2026 09:48 UTC",
   "calls": [
     {
       "company": "Tata Consultancy Services",
@@ -15,7 +15,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 2465.0,
-      "as_of": "2026-10-17",
+      "as_of": "2026-10-18",
       "return_pct": 12.1,
       "benchmark_return_pct": -4.23,
       "alpha": 16.33,
@@ -376,7 +376,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 728.85,
-      "as_of": "2026-10-17",
+      "as_of": "2026-10-18",
       "return_pct": -7.14,
       "benchmark_return_pct": -3.78,
       "alpha": -3.36,
@@ -930,7 +930,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1161.2,
-      "as_of": "2026-10-17",
+      "as_of": "2026-10-18",
       "return_pct": 11.56,
       "benchmark_return_pct": -4.26,
       "alpha": 15.82,
@@ -1432,11 +1432,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-17",
-        "source": "Yahoo",
-        "as_of": "2026-10-17"
-      }
+      "next_earnings": null
     },
     {
       "company": "ICICI Bank",
@@ -1452,7 +1448,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1397.0,
-      "as_of": "2026-10-17",
+      "as_of": "2026-10-18",
       "return_pct": -0.99,
       "benchmark_return_pct": -5.26,
       "alpha": 4.27,
@@ -1753,11 +1749,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-17",
-        "source": "Yahoo",
-        "as_of": "2026-10-17"
-      }
+      "next_earnings": null
     },
     {
       "company": "Amazon",
@@ -1773,7 +1765,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 250.0,
-      "as_of": "2026-10-17",
+      "as_of": "2026-10-18",
       "return_pct": 1.21,
       "benchmark_return_pct": 1.54,
       "alpha": -0.33,
@@ -2433,7 +2425,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1893.8,
-      "as_of": "2026-10-17",
+      "as_of": "2026-10-18",
       "return_pct": -11.11,
       "benchmark_return_pct": -3.77,
       "alpha": -7.34,
@@ -2726,7 +2718,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 340.59,
-      "as_of": "2026-10-17",
+      "as_of": "2026-10-18",
       "return_pct": -6.17,
       "benchmark_return_pct": -0.83,
       "alpha": -5.34,
@@ -2959,7 +2951,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 402.61,
-      "as_of": "2026-10-17",
+      "as_of": "2026-10-18",
       "return_pct": 13.09,
       "benchmark_return_pct": 2.71,
       "alpha": 10.38,
@@ -3240,7 +3232,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 93.9,
-      "as_of": "2026-10-17",
+      "as_of": "2026-10-18",
       "return_pct": 7.93,
       "benchmark_return_pct": 3.1,
       "alpha": 4.83,
@@ -3497,7 +3489,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 1211.2,
-      "as_of": "2026-10-17",
+      "as_of": "2026-10-18",
       "return_pct": -6.97,
       "benchmark_return_pct": -5.97,
       "alpha": -1.0,
@@ -3730,7 +3722,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 529.05,
-      "as_of": "2026-10-17",
+      "as_of": "2026-10-18",
       "return_pct": 8.27,
       "benchmark_return_pct": -0.83,
       "alpha": 9.1,
@@ -3963,7 +3955,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 339.72,
-      "as_of": "2026-10-17",
+      "as_of": "2026-10-18",
       "return_pct": -6.37,
       "benchmark_return_pct": -1.62,
       "alpha": -4.75,
@@ -4168,7 +4160,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 982.1,
-      "as_of": "2026-10-17",
+      "as_of": "2026-10-18",
       "return_pct": -8.9,
       "benchmark_return_pct": -5.8,
       "alpha": -3.1,
@@ -4389,7 +4381,7 @@
       "report_url": "",
       "status": "open",
       "live_price": 11489.0,
-      "as_of": "2026-10-17",
+      "as_of": "2026-10-18",
       "return_pct": -16.08,
       "benchmark_return_pct": -4.18,
       "alpha": -11.9,
