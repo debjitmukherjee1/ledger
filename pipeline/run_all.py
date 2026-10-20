@@ -6,7 +6,10 @@ For each call in calls.json, computes:
                             was frozen at when a later call superseded it (closed)
   - return_pct            : price return since call_date, dividend-agnostic
   - benchmark_return_pct   : same window, on the call's benchmark index
-  - alpha                  : return_pct - benchmark_return_pct
+  - alpha                  : return_pct - benchmark_return_pct (raw, direction-blind)
+  - direction / signed_alpha : +1 BUY/ACCUMULATE, -1 REDUCE, 0 HOLD; signed_alpha =
+                            direction x alpha, so a REDUCE that underperforms its
+                            index scores positive (the call was right)
   - target_distance_pct    : how far live_price sits from target (null if no target)
   - hit                    : closed calls only — did the price cross the target
                               at any point between call_date and the closing date?
@@ -154,6 +157,15 @@ def enrich(call, calls, today, earnings_by_symbol):
     return enriched
 
 
+DIRECTION = {"BUY": 1, "ACCUMULATE": 1, "REDUCE": -1}
+
+
+def add_direction(c):
+    c["direction"] = DIRECTION.get(c["rating"], 0)
+    c["signed_alpha"] = round(c["direction"] * c["alpha"], 2) + 0.0
+    return c
+
+
 def _key(call):
     return (call["yahoo_symbol"], call["call_date"])
 
@@ -212,11 +224,22 @@ def main():
     with open(prev_path, "w") as f:
         json.dump({"updated_at": updated, "calls": enriched_calls}, f, indent=2)
 
+    for c in enriched_calls:
+        add_direction(c)
+    with open(prev_path, "w") as f:
+        json.dump({"updated_at": updated, "calls": enriched_calls}, f, indent=2)
+
     closed = [c for c in enriched_calls if c["status"] == "closed" and c["hit"] is not None]
     hit_rate = round(100 * sum(1 for c in closed if c["hit"]) / len(closed), 1) if closed else None
+    # Deprecated: raw alpha averaged over every call, blind to the call's direction.
     avg_alpha = round(sum(c["alpha"] for c in enriched_calls) / len(enriched_calls), 2) if enriched_calls else 0
-    best = max(enriched_calls, key=lambda c: c["alpha"]) if enriched_calls else None
-    worst = min(enriched_calls, key=lambda c: c["alpha"]) if enriched_calls else None
+    directional = [c for c in enriched_calls if c["direction"] != 0]
+    holds = [c for c in enriched_calls if c["direction"] == 0]
+    avg_signed = round(sum(c["signed_alpha"] for c in directional) / len(directional), 2) if directional else None
+    right = sum(1 for c in directional if c["signed_alpha"] > 0)
+    best = max(directional, key=lambda c: c["signed_alpha"]) if directional else None
+    worst = min(directional, key=lambda c: c["signed_alpha"]) if directional else None
+    hold_avg_abs = round(sum(abs(c["alpha"]) for c in holds) / len(holds), 2) if holds else None
 
     summary = {
         "updated_at": updated,
@@ -224,14 +247,19 @@ def main():
         "closed_calls": len(closed),
         "hit_rate_pct": hit_rate,
         "average_alpha_pct": avg_alpha,
-        "best_call": {"company": best["company"], "rating": best["rating"], "call_date": best["call_date"], "alpha": best["alpha"]} if best else None,
-        "worst_call": {"company": worst["company"], "rating": worst["rating"], "call_date": worst["call_date"], "alpha": worst["alpha"]} if worst else None,
+        "directional_calls": len(directional),
+        "avg_signed_alpha_pct": avg_signed,
+        "directional_right": right,
+        "hold_calls": len(holds),
+        "hold_avg_abs_alpha_pct": hold_avg_abs,
+        "best_call": {"company": best["company"], "rating": best["rating"], "call_date": best["call_date"], "alpha": best["alpha"], "signed_alpha": best["signed_alpha"]} if best else None,
+        "worst_call": {"company": worst["company"], "rating": worst["rating"], "call_date": worst["call_date"], "alpha": worst["alpha"], "signed_alpha": worst["signed_alpha"]} if worst else None,
     }
     with open(os.path.join(config.DATA_DIR, "summary.json"), "w") as f:
         json.dump(summary, f, indent=2)
 
     for c in enriched_calls:
-        print(f"  {c['company']:26s} {c['rating']:11s} ret {c['return_pct']:+7.2f}%  alpha {c['alpha']:+7.2f}%  "
+        print(f"  {c['company']:26s} {c['rating']:11s} ret {c['return_pct']:+7.2f}%  alpha {c['alpha']:+7.2f}%  signed {c['signed_alpha']:+7.2f}%  "
               f"status {c['status']:7s}" + (f" hit={c['hit']}" if c["hit"] is not None else ""))
     print(f"Wrote {len(enriched_calls)} calls -> {os.path.normpath(config.DATA_DIR)}")
 

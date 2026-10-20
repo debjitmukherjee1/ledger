@@ -10,7 +10,7 @@
     "price_at_call": 247,
     "target": 275,
     "currency": "USD",
-    "report_url": "",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/amazon-research-note.pdf",
     "status": "open"
   },
   {
@@ -24,7 +24,7 @@
     "price_at_call": 357,
     "target": 390,
     "currency": "USD",
-    "report_url": "",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/alphabet-research-note.pdf",
     "status": "closed"
   },
   {
@@ -38,7 +38,7 @@
     "price_at_call": 324.62,
     "target": 373,
     "currency": "USD",
-    "report_url": "",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/visa-research-report.pdf",
     "status": "closed"
   },
   {
@@ -52,7 +52,7 @@
     "price_at_call": 81.3,
     "target": 87,
     "currency": "USD",
-    "report_url": "",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/coca-cola-research-note.pdf",
     "status": "closed"
   },
   {
@@ -66,7 +66,7 @@
     "price_at_call": 363,
     "target": 384,
     "currency": "USD",
-    "report_url": "",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/alphabet-research-note.pdf",
     "status": "open"
   },
   {
@@ -80,7 +80,7 @@
     "price_at_call": 356,
     "target": 355,
     "currency": "USD",
-    "report_url": "",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/visa-research-report.pdf",
     "status": "open"
   },
   {
@@ -94,7 +94,7 @@
     "price_at_call": 87,
     "target": 86,
     "currency": "USD",
-    "report_url": "",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/coca-cola-research-note.pdf",
     "status": "open"
   },
   {
@@ -108,7 +108,7 @@
     "price_at_call": 488.63,
     "target": 488,
     "currency": "USD",
-    "report_url": "",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/microsoft-research-report.pdf",
     "status": "open"
   },
   {
@@ -122,7 +122,7 @@
     "price_at_call": 362.84,
     "target": 323,
     "currency": "USD",
-    "report_url": "",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/jpmorgan-research-report.pdf",
     "status": "open"
   },
   {
@@ -136,7 +136,7 @@
     "price_at_call": 227.98,
     "target": 200,
     "currency": "USD",
-    "report_url": "",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/nvidia-research-report.pdf",
     "status": "open"
   }
 ]
