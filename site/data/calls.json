@@ -1,5 +1,5 @@
 {
-  "updated_at": "20 Oct 2026 08:13 UTC",
+  "updated_at": "20 Oct 2026 10:19 UTC",
   "calls": [
     {
       "company": "Tata Consultancy Services",
@@ -926,11 +926,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-23",
-        "source": "Yahoo",
-        "as_of": "2026-10-20"
-      },
+      "next_earnings": null,
       "direction": 0,
       "signed_alpha": 0.0
     },
@@ -1261,11 +1257,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-23",
-        "source": "Yahoo",
-        "as_of": "2026-10-20"
-      },
+      "next_earnings": null,
       "direction": 1,
       "signed_alpha": 13.95
     },
@@ -4850,12 +4842,12 @@
       "currency": "INR",
       "report_url": "https://debjitmukherjee1.github.io/assets/files/sun-pharma-research-report.pdf",
       "status": "open",
-      "live_price": 1758.8,
+      "live_price": 1743.0,
       "as_of": "2026-10-20",
-      "return_pct": -7.38,
+      "return_pct": -8.21,
       "benchmark_return_pct": -4.22,
-      "alpha": -3.16,
-      "target_distance_pct": -14.54,
+      "alpha": -3.99,
+      "target_distance_pct": -13.77,
       "hit": null,
       "series": [
         {
@@ -4973,12 +4965,20 @@
         {
           "d": "2026-10-16",
           "c": 1758.8
+        },
+        {
+          "d": "2026-10-19",
+          "c": 1743.0
         }
       ],
       "source": "live",
-      "next_earnings": null,
+      "next_earnings": {
+        "date": "2026-10-30",
+        "source": "Yahoo",
+        "as_of": "2026-10-20"
+      },
       "direction": -1,
-      "signed_alpha": 3.16
+      "signed_alpha": 3.99
     },
     {
       "company": "Larsen & Toubro",
