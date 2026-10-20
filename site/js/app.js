@@ -64,9 +64,9 @@ function renderSummary() {
   const stats = [
     ["Total calls", s.total_calls, ""],
     ["Hit rate (closed)", s.hit_rate_pct == null ? "—" : `${s.hit_rate_pct}%`, s.closed_calls ? `${s.closed_calls} closed` : "no closed calls yet"],
-    ["Average alpha", pct(s.average_alpha_pct), ""],
-    ["Best call", s.best_call ? `${s.best_call.company}` : "—", s.best_call ? `${s.best_call.rating} · ${pct(s.best_call.alpha)} alpha` : ""],
-    ["Worst call", s.worst_call ? `${s.worst_call.company}` : "—", s.worst_call ? `${s.worst_call.rating} · ${pct(s.worst_call.alpha)} alpha` : ""],
+    ["Call alpha (avg)", s.avg_signed_alpha_pct == null ? "—" : pct(s.avg_signed_alpha_pct), s.directional_calls ? `${s.directional_right} of ${s.directional_calls} BUY/REDUCE calls right so far · ${s.hold_calls} HOLDs excluded` : ""],
+    ["Best call", s.best_call ? `${s.best_call.company}` : "—", s.best_call ? `${s.best_call.rating} · ${pct(s.best_call.signed_alpha)} call alpha` : ""],
+    ["Worst call", s.worst_call ? `${s.worst_call.company}` : "—", s.worst_call ? `${s.worst_call.rating} · ${pct(s.worst_call.signed_alpha)} call alpha` : ""],
   ];
   document.getElementById("summary-stats").innerHTML = stats.map(([label, val, sub]) => `
     <div class="stat">
@@ -114,6 +114,7 @@ function renderTable() {
         <td class="num">${fmtPrice(c.live_price, c.currency)}</td>
         <td class="num"><span class="${cls(c.return_pct)}">${pct(c.return_pct)}</span></td>
         <td class="num"><span class="${cls(c.alpha)}">${pct(c.alpha)}</span></td>
+        <td class="num">${c.direction ? `<span class="${cls(c.signed_alpha)}">${pct(c.signed_alpha)}</span>` : `<span class="no-target">HOLD</span>`}</td>
         <td class="num">${distCell}</td>
         <td class="num sparkline-cell">${sparkSvg(c.series)}</td>
         <td class="num"><span class="status-pill ${c.status === "open" ? "is-open" : ""}">${c.status}</span>${hitBadge}</td>

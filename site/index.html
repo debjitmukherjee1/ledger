@@ -91,6 +91,7 @@
               <th>Live price</th>
               <th>Return</th>
               <th>Alpha</th>
+              <th title="Alpha signed by the call's direction: positive means the call was right">Call alpha</th>
               <th>To target</th>
               <th>Since call</th>
               <th>Status</th>
@@ -109,10 +110,11 @@
       <ol>
         <li><strong>Return since call</strong> — <code>(live_price / price_at_call − 1) × 100</code>. This is a <strong>price return</strong>: dividends are excluded, so income-paying names (HDFC Bank, Coca-Cola, Visa…) will understate total return versus what a holder actually earned.</li>
         <li><strong>Alpha</strong> — the call's return since call date, minus its benchmark's return over the identical window. India calls are measured in INR against the Nifty 50; US calls in USD against the S&amp;P 500 — never mixed across currencies.</li>
+        <li><strong>Call alpha</strong> — alpha signed by the direction of the call: BUY and ACCUMULATE count +1, REDUCE counts −1. A REDUCE that falls further than its index has positive call alpha, because the call was right. HOLD calls have no direction and are excluded from the average and from best/worst; their raw alpha is still shown.</li>
         <li><strong>Distance to target</strong> — <code>(target / live_price − 1) × 100</code>. Positive means the target is still above the live price; negative means the live price has moved past it.</li>
         <li><strong>Hit / miss (closed calls only)</strong> — a call closes when a later report revises it (e.g. Infosys HOLD → ACCUMULATE, ICICI HOLD → REDUCE). Its window runs from its own call date to the date of the revision, using the revision's price as the closing price. It's marked a <strong>hit</strong> if the price ever crossed the target during that window (reached it on the way up for an upside thesis, or fell to it for a downside/fair-value thesis) — otherwise a <strong>miss</strong>.</li>
       </ol>
-      <p class="muted small">Where a call was revised, both the closed original and the open revision are kept — nothing is deleted from the record. The summary header's hit rate, average alpha, and best/worst call are computed across every row shown here, open and closed alike.</p>
+      <p class="muted small">Where a call was revised, both the closed original and the open revision are kept — nothing is deleted from the record. The summary header's hit rate is computed over closed calls; call alpha and best/worst over every BUY/ACCUMULATE/REDUCE row, open and closed alike.</p>
       <p class="disclaimer">⚠ Personal, educational research tool. Prices refresh once daily from an unofficial free endpoint, not in real time. Past calls are not a guarantee of future ones. <strong>Not investment advice, not a solicitation, not SEBI-registered research.</strong></p>
     </section>
   </main>
