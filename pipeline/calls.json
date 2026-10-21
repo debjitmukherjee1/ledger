@@ -306,5 +306,33 @@
     "currency": "INR",
     "report_url": "https://debjitmukherjee1.github.io/assets/files/larsen-toubro-research-report.pdf",
     "status": "open"
+  },
+  {
+    "company": "Apple",
+    "ticker": "AAPL",
+    "yahoo_symbol": "AAPL",
+    "market": "US",
+    "benchmark": "S&P 500",
+    "call_date": "2026-07-21",
+    "rating": "HOLD",
+    "price_at_call": 333.26,
+    "target": 302,
+    "currency": "USD",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/apple-investment-report.pdf",
+    "status": "open"
+  },
+  {
+    "company": "Tesla",
+    "ticker": "TSLA",
+    "yahoo_symbol": "TSLA",
+    "market": "US",
+    "benchmark": "S&P 500",
+    "call_date": "2026-07-25",
+    "rating": "HOLD",
+    "price_at_call": 313,
+    "target": 297,
+    "currency": "USD",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/tesla-research-note-jul2026.pdf",
+    "status": "open"
   }
 ]
