@@ -334,5 +334,19 @@
     "currency": "USD",
     "report_url": "https://debjitmukherjee1.github.io/assets/files/tesla-research-note-jul2026.pdf",
     "status": "open"
+  },
+  {
+    "company": "Costco",
+    "ticker": "COST",
+    "yahoo_symbol": "COST",
+    "market": "US",
+    "benchmark": "S&P 500",
+    "call_date": "2026-10-16",
+    "rating": "HOLD",
+    "price_at_call": 989.11,
+    "target": 977,
+    "currency": "USD",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/costco-research-report.pdf",
+    "status": "open"
   }
 ]
