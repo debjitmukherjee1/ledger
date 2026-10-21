@@ -1,5 +1,5 @@
 {
-  "updated_at": "21 Oct 2026 04:22 UTC",
+  "updated_at": "21 Oct 2026 06:08 UTC",
   "calls": [
     {
       "company": "Amazon",
@@ -316,11 +316,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-10-29",
-        "source": "Yahoo",
-        "as_of": "2026-10-21"
-      },
+      "next_earnings": null,
       "direction": 1,
       "signed_alpha": 4.09
     },
@@ -2670,6 +2666,45 @@
         {
           "d": "2026-10-20",
           "c": 373.71
+        }
+      ],
+      "source": "live",
+      "next_earnings": null,
+      "direction": 0,
+      "signed_alpha": 0.0
+    },
+    {
+      "company": "Costco",
+      "ticker": "COST",
+      "yahoo_symbol": "COST",
+      "market": "US",
+      "benchmark": "S&P 500",
+      "call_date": "2026-10-16",
+      "rating": "HOLD",
+      "price_at_call": 989.11,
+      "target": 977,
+      "currency": "USD",
+      "report_url": "https://debjitmukherjee1.github.io/assets/files/costco-research-report.pdf",
+      "status": "open",
+      "live_price": 994.61,
+      "as_of": "2026-10-21",
+      "return_pct": 0.56,
+      "benchmark_return_pct": 0.69,
+      "alpha": -0.13,
+      "target_distance_pct": -1.77,
+      "hit": null,
+      "series": [
+        {
+          "d": "2026-10-16",
+          "c": 989.11
+        },
+        {
+          "d": "2026-10-19",
+          "c": 995.53
+        },
+        {
+          "d": "2026-10-20",
+          "c": 994.61
         }
       ],
       "source": "live",
