@@ -1,26 +1,26 @@
 {
-  "updated_at": "22 Oct 2026 10:30 UTC",
+  "updated_at": "23 Oct 2026 10:25 UTC",
   "total_calls": 25,
   "closed_calls": 5,
   "hit_rate_pct": 20.0,
-  "average_alpha_pct": 1.71,
+  "average_alpha_pct": 1.93,
   "directional_calls": 13,
-  "avg_signed_alpha_pct": 6.48,
-  "directional_right": 11,
+  "avg_signed_alpha_pct": 6.42,
+  "directional_right": 10,
   "hold_calls": 12,
-  "hold_avg_abs_alpha_pct": 7.42,
+  "hold_avg_abs_alpha_pct": 8.22,
   "best_call": {
     "company": "Tata Consultancy Services",
     "rating": "BUY",
     "call_date": "2026-06-18",
-    "alpha": 20.13,
-    "signed_alpha": 20.13
+    "alpha": 21.54,
+    "signed_alpha": 21.54
   },
   "worst_call": {
     "company": "ICICI Bank",
     "rating": "REDUCE",
     "call_date": "2026-07-06",
-    "alpha": 6.24,
-    "signed_alpha": -6.24
+    "alpha": 6.3,
+    "signed_alpha": -6.3
   }
 }
