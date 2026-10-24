@@ -1,14 +1,14 @@
 {
-  "updated_at": "23 Oct 2026 10:25 UTC",
+  "updated_at": "24 Oct 2026 09:44 UTC",
   "total_calls": 25,
   "closed_calls": 5,
   "hit_rate_pct": 20.0,
-  "average_alpha_pct": 1.93,
+  "average_alpha_pct": 1.72,
   "directional_calls": 13,
-  "avg_signed_alpha_pct": 6.42,
+  "avg_signed_alpha_pct": 6.45,
   "directional_right": 10,
   "hold_calls": 12,
-  "hold_avg_abs_alpha_pct": 8.22,
+  "hold_avg_abs_alpha_pct": 7.99,
   "best_call": {
     "company": "Tata Consultancy Services",
     "rating": "BUY",
