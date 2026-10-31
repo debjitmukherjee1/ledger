@@ -1,14 +1,14 @@
 {
-  "updated_at": "30 Oct 2026 11:32 UTC",
+  "updated_at": "31 Oct 2026 11:05 UTC",
   "total_calls": 25,
   "closed_calls": 5,
   "hit_rate_pct": 20.0,
-  "average_alpha_pct": 1.12,
+  "average_alpha_pct": 1.52,
   "directional_calls": 13,
-  "avg_signed_alpha_pct": 5.88,
+  "avg_signed_alpha_pct": 6.08,
   "directional_right": 9,
   "hold_calls": 12,
-  "hold_avg_abs_alpha_pct": 9.7,
+  "hold_avg_abs_alpha_pct": 10.54,
   "best_call": {
     "company": "Infosys",
     "rating": "ACCUMULATE",
