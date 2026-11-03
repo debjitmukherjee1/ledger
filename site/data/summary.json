@@ -1,20 +1,14 @@
 {
-  "updated_at": "02 Nov 2026 13:45 UTC",
+  "updated_at": "03 Nov 2026 12:57 UTC",
   "total_calls": 26,
   "closed_calls": 5,
   "hit_rate_pct": 20.0,
-  "average_alpha_pct": 1.42,
+  "average_alpha_pct": 1.69,
   "directional_calls": 14,
-  "avg_signed_alpha_pct": 5.5,
+  "avg_signed_alpha_pct": 5.49,
   "directional_right": 9,
   "hold_calls": 12,
-  "hold_avg_abs_alpha_pct": 10.64,
+  "hold_avg_abs_alpha_pct": 10.91,
   "best_call": null,
-  "worst_call": {
-    "company": "Amazon",
-    "rating": "BUY",
-    "call_date": "2026-07-09",
-    "alpha": -3.17,
-    "signed_alpha": -3.17
-  }
+  "worst_call": null
 }
