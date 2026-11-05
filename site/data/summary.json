@@ -1,14 +1,14 @@
 {
-  "updated_at": "04 Nov 2026 13:12 UTC",
+  "updated_at": "05 Nov 2026 13:26 UTC",
   "total_calls": 26,
   "closed_calls": 5,
   "hit_rate_pct": 20.0,
-  "average_alpha_pct": 1.25,
+  "average_alpha_pct": 1.96,
   "directional_calls": 14,
-  "avg_signed_alpha_pct": 5.16,
+  "avg_signed_alpha_pct": 5.05,
   "directional_right": 11,
   "hold_calls": 12,
-  "hold_avg_abs_alpha_pct": 10.37,
+  "hold_avg_abs_alpha_pct": 10.63,
   "best_call": null,
   "worst_call": null
 }

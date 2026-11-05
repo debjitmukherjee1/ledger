@@ -1,5 +1,5 @@
 {
-  "updated_at": "04 Nov 2026 13:12 UTC",
+  "updated_at": "05 Nov 2026 13:26 UTC",
   "calls": [
     {
       "company": "Amazon",
@@ -14,12 +14,12 @@
       "currency": "USD",
       "report_url": "https://debjitmukherjee1.github.io/assets/files/amazon-research-note.pdf",
       "status": "open",
-      "live_price": 250.69,
-      "as_of": "2026-11-04",
-      "return_pct": 1.49,
-      "benchmark_return_pct": 0.34,
-      "alpha": 1.15,
-      "target_distance_pct": 9.7,
+      "live_price": 266.03,
+      "as_of": "2026-11-05",
+      "return_pct": 7.7,
+      "benchmark_return_pct": 1.92,
+      "alpha": 5.78,
+      "target_distance_pct": 3.37,
       "hit": null,
       "series": [
         {
@@ -353,12 +353,16 @@
         {
           "d": "2026-11-03",
           "c": 250.69
+        },
+        {
+          "d": "2026-11-04",
+          "c": 266.03
         }
       ],
       "source": "live",
       "next_earnings": null,
       "direction": 1,
-      "signed_alpha": 1.15
+      "signed_alpha": 5.78
     },
     {
       "company": "Alphabet",
@@ -730,12 +734,12 @@
       "currency": "USD",
       "report_url": "https://debjitmukherjee1.github.io/assets/files/alphabet-research-note.pdf",
       "status": "open",
-      "live_price": 280.03,
-      "as_of": "2026-11-04",
-      "return_pct": -22.86,
-      "benchmark_return_pct": -2.0,
-      "alpha": -20.86,
-      "target_distance_pct": 37.13,
+      "live_price": 288.93,
+      "as_of": "2026-11-05",
+      "return_pct": -20.4,
+      "benchmark_return_pct": -0.45,
+      "alpha": -19.95,
+      "target_distance_pct": 32.9,
       "hit": null,
       "series": [
         {
@@ -993,6 +997,10 @@
         {
           "d": "2026-11-03",
           "c": 280.03
+        },
+        {
+          "d": "2026-11-04",
+          "c": 288.93
         }
       ],
       "source": "live",
@@ -1013,12 +1021,12 @@
       "currency": "USD",
       "report_url": "https://debjitmukherjee1.github.io/assets/files/visa-research-report.pdf",
       "status": "open",
-      "live_price": 420.42,
-      "as_of": "2026-11-04",
-      "return_pct": 18.1,
-      "benchmark_return_pct": 1.49,
-      "alpha": 16.61,
-      "target_distance_pct": -15.56,
+      "live_price": 436.57,
+      "as_of": "2026-11-05",
+      "return_pct": 22.63,
+      "benchmark_return_pct": 3.1,
+      "alpha": 19.53,
+      "target_distance_pct": -18.68,
       "hit": null,
       "series": [
         {
@@ -1324,6 +1332,10 @@
         {
           "d": "2026-11-03",
           "c": 420.42
+        },
+        {
+          "d": "2026-11-04",
+          "c": 436.57
         }
       ],
       "source": "live",
@@ -1344,12 +1356,12 @@
       "currency": "USD",
       "report_url": "https://debjitmukherjee1.github.io/assets/files/coca-cola-research-note.pdf",
       "status": "open",
-      "live_price": 94.8,
-      "as_of": "2026-11-04",
-      "return_pct": 8.97,
-      "benchmark_return_pct": 1.89,
-      "alpha": 7.08,
-      "target_distance_pct": -9.28,
+      "live_price": 95.8,
+      "as_of": "2026-11-05",
+      "return_pct": 10.11,
+      "benchmark_return_pct": 3.5,
+      "alpha": 6.61,
+      "target_distance_pct": -10.23,
       "hit": null,
       "series": [
         {
@@ -1631,6 +1643,10 @@
         {
           "d": "2026-11-03",
           "c": 94.8
+        },
+        {
+          "d": "2026-11-04",
+          "c": 95.8
         }
       ],
       "source": "live",
@@ -1651,12 +1667,12 @@
       "currency": "USD",
       "report_url": "https://debjitmukherjee1.github.io/assets/files/microsoft-research-report.pdf",
       "status": "open",
-      "live_price": 520.99,
-      "as_of": "2026-11-04",
-      "return_pct": 6.62,
-      "benchmark_return_pct": -2.0,
-      "alpha": 8.62,
-      "target_distance_pct": -6.33,
+      "live_price": 555.8,
+      "as_of": "2026-11-05",
+      "return_pct": 13.75,
+      "benchmark_return_pct": -0.45,
+      "alpha": 14.2,
+      "target_distance_pct": -12.2,
       "hit": null,
       "series": [
         {
@@ -1914,14 +1930,14 @@
         {
           "d": "2026-11-03",
           "c": 520.99
+        },
+        {
+          "d": "2026-11-04",
+          "c": 555.8
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2027-01-27",
-        "source": "Yahoo",
-        "as_of": "2026-11-04"
-      },
+      "next_earnings": null,
       "direction": 0,
       "signed_alpha": 0.0
     },
@@ -1938,12 +1954,12 @@
       "currency": "USD",
       "report_url": "https://debjitmukherjee1.github.io/assets/files/jpmorgan-research-report.pdf",
       "status": "open",
-      "live_price": 337.98,
-      "as_of": "2026-11-04",
-      "return_pct": -6.85,
-      "benchmark_return_pct": -2.79,
-      "alpha": -4.06,
-      "target_distance_pct": -4.43,
+      "live_price": 352.11,
+      "as_of": "2026-11-05",
+      "return_pct": -2.96,
+      "benchmark_return_pct": -1.25,
+      "alpha": -1.71,
+      "target_distance_pct": -8.27,
       "hit": null,
       "series": [
         {
@@ -2173,12 +2189,16 @@
         {
           "d": "2026-11-03",
           "c": 337.98
+        },
+        {
+          "d": "2026-11-04",
+          "c": 352.11
         }
       ],
       "source": "live",
       "next_earnings": null,
       "direction": -1,
-      "signed_alpha": 4.06
+      "signed_alpha": 1.71
     },
     {
       "company": "NVIDIA",
@@ -2193,12 +2213,12 @@
       "currency": "USD",
       "report_url": "https://debjitmukherjee1.github.io/assets/files/nvidia-research-report.pdf",
       "status": "open",
-      "live_price": 206.69,
-      "as_of": "2026-11-04",
-      "return_pct": -9.34,
-      "benchmark_return_pct": -2.1,
-      "alpha": -7.24,
-      "target_distance_pct": -3.24,
+      "live_price": 200.13,
+      "as_of": "2026-11-05",
+      "return_pct": -12.22,
+      "benchmark_return_pct": -0.55,
+      "alpha": -11.67,
+      "target_distance_pct": -0.06,
       "hit": null,
       "series": [
         {
@@ -2392,12 +2412,16 @@
         {
           "d": "2026-11-03",
           "c": 206.69
+        },
+        {
+          "d": "2026-11-04",
+          "c": 200.13
         }
       ],
       "source": "live",
       "next_earnings": null,
       "direction": -1,
-      "signed_alpha": 7.24
+      "signed_alpha": 11.67
     },
     {
       "company": "Apple",
@@ -2412,12 +2436,12 @@
       "currency": "USD",
       "report_url": "https://debjitmukherjee1.github.io/assets/files/apple-investment-report.pdf",
       "status": "open",
-      "live_price": 331.9,
-      "as_of": "2026-11-04",
-      "return_pct": -0.41,
-      "benchmark_return_pct": 0.8,
-      "alpha": -1.21,
-      "target_distance_pct": -9.01,
+      "live_price": 349.51,
+      "as_of": "2026-11-05",
+      "return_pct": 4.88,
+      "benchmark_return_pct": 2.39,
+      "alpha": 2.49,
+      "target_distance_pct": -13.59,
       "hit": null,
       "series": [
         {
@@ -2719,6 +2743,10 @@
         {
           "d": "2026-11-03",
           "c": 331.9
+        },
+        {
+          "d": "2026-11-04",
+          "c": 349.51
         }
       ],
       "source": "live",
@@ -2739,12 +2767,12 @@
       "currency": "USD",
       "report_url": "https://debjitmukherjee1.github.io/assets/files/tesla-research-note-jul2026.pdf",
       "status": "open",
-      "live_price": 398.5,
-      "as_of": "2026-11-04",
-      "return_pct": 27.32,
-      "benchmark_return_pct": 2.12,
-      "alpha": 25.2,
-      "target_distance_pct": -25.47,
+      "live_price": 385.19,
+      "as_of": "2026-11-05",
+      "return_pct": 23.06,
+      "benchmark_return_pct": 3.73,
+      "alpha": 19.33,
+      "target_distance_pct": -22.9,
       "hit": null,
       "series": [
         {
@@ -3030,6 +3058,10 @@
         {
           "d": "2026-11-03",
           "c": 398.5
+        },
+        {
+          "d": "2026-11-04",
+          "c": 385.19
         }
       ],
       "source": "live",
@@ -3050,12 +3082,12 @@
       "currency": "USD",
       "report_url": "https://debjitmukherjee1.github.io/assets/files/costco-research-report.pdf",
       "status": "open",
-      "live_price": 1019.26,
-      "as_of": "2026-11-04",
-      "return_pct": 3.05,
-      "benchmark_return_pct": -1.18,
-      "alpha": 4.23,
-      "target_distance_pct": -4.15,
+      "live_price": 1046.47,
+      "as_of": "2026-11-05",
+      "return_pct": 5.8,
+      "benchmark_return_pct": 0.38,
+      "alpha": 5.42,
+      "target_distance_pct": -6.64,
       "hit": null,
       "series": [
         {
@@ -3109,6 +3141,10 @@
         {
           "d": "2026-11-03",
           "c": 1019.26
+        },
+        {
+          "d": "2026-11-04",
+          "c": 1046.47
         }
       ],
       "source": "live",
@@ -3129,12 +3165,12 @@
       "currency": "USD",
       "report_url": "https://debjitmukherjee1.github.io/assets/files/eli-lilly-research-report.pdf",
       "status": "open",
-      "live_price": 1409.38,
-      "as_of": "2026-11-04",
-      "return_pct": -0.58,
-      "benchmark_return_pct": -0.15,
-      "alpha": -0.43,
-      "target_distance_pct": -39.41,
+      "live_price": 1417.99,
+      "as_of": "2026-11-05",
+      "return_pct": 0.03,
+      "benchmark_return_pct": 1.43,
+      "alpha": -1.4,
+      "target_distance_pct": -39.77,
       "hit": null,
       "series": [
         {
@@ -3148,12 +3184,16 @@
         {
           "d": "2026-11-03",
           "c": 1409.38
+        },
+        {
+          "d": "2026-11-04",
+          "c": 1417.99
         }
       ],
       "source": "live",
       "next_earnings": null,
       "direction": -1,
-      "signed_alpha": 0.43
+      "signed_alpha": 1.4
     }
   ]
 }
