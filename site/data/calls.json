@@ -1,5 +1,5 @@
 {
-  "updated_at": "06 Nov 2026 13:09 UTC",
+  "updated_at": "06 Nov 2026 13:33 UTC",
   "calls": [
     {
       "company": "Tata Consultancy Services",
@@ -815,11 +815,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2027-01-16",
-        "source": "Yahoo",
-        "as_of": "2026-11-06"
-      },
+      "next_earnings": null,
       "direction": 0,
       "signed_alpha": 0.0
     },
@@ -6780,7 +6776,7 @@
       "call_date": "2026-11-05",
       "rating": "HOLD",
       "price_at_call": 278.85,
-      "target": 282,
+      "target": 288,
       "currency": "INR",
       "report_url": "https://debjitmukherjee1.github.io/assets/files/itc-research-report.pdf",
       "status": "open",
@@ -6789,7 +6785,7 @@
       "return_pct": 1.54,
       "benchmark_return_pct": 2.01,
       "alpha": -0.47,
-      "target_distance_pct": -0.41,
+      "target_distance_pct": 1.71,
       "hit": null,
       "series": [
         {
