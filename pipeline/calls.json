@@ -362,5 +362,19 @@
     "currency": "USD",
     "report_url": "https://debjitmukherjee1.github.io/assets/files/eli-lilly-research-report.pdf",
     "status": "open"
+  },
+  {
+    "company": "ITC",
+    "ticker": "ITC",
+    "yahoo_symbol": "ITC.NS",
+    "market": "India",
+    "benchmark": "Nifty 50",
+    "call_date": "2026-11-05",
+    "rating": "HOLD",
+    "price_at_call": 278.85,
+    "target": 282,
+    "currency": "INR",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/itc-research-report.pdf",
+    "status": "open"
   }
 ]
