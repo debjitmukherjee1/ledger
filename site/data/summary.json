@@ -1,14 +1,14 @@
 {
-  "updated_at": "06 Nov 2026 03:11 UTC",
+  "updated_at": "06 Nov 2026 13:09 UTC",
   "total_calls": 27,
   "closed_calls": 5,
   "hit_rate_pct": 20.0,
-  "average_alpha_pct": 2.16,
+  "average_alpha_pct": 2.02,
   "directional_calls": 14,
-  "avg_signed_alpha_pct": 5.4,
-  "directional_right": 11,
+  "avg_signed_alpha_pct": 5.18,
+  "directional_right": 12,
   "hold_calls": 13,
-  "hold_avg_abs_alpha_pct": 10.06,
+  "hold_avg_abs_alpha_pct": 10.0,
   "best_call": {
     "company": "NVIDIA",
     "rating": "REDUCE",
@@ -20,7 +20,7 @@
     "company": "ICICI Bank",
     "rating": "REDUCE",
     "call_date": "2026-07-06",
-    "alpha": 5.88,
-    "signed_alpha": -5.88
+    "alpha": 8.89,
+    "signed_alpha": -8.89
   }
 }
