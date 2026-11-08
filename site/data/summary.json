@@ -1,14 +1,14 @@
 {
-  "updated_at": "07 Nov 2026 11:52 UTC",
+  "updated_at": "08 Nov 2026 12:06 UTC",
   "total_calls": 27,
   "closed_calls": 5,
   "hit_rate_pct": 20.0,
-  "average_alpha_pct": 1.99,
+  "average_alpha_pct": 2.11,
   "directional_calls": 14,
-  "avg_signed_alpha_pct": 5.15,
+  "avg_signed_alpha_pct": 4.89,
   "directional_right": 12,
   "hold_calls": 13,
-  "hold_avg_abs_alpha_pct": 9.97,
+  "hold_avg_abs_alpha_pct": 9.96,
   "best_call": {
     "company": "NVIDIA",
     "rating": "REDUCE",
