@@ -194,5 +194,19 @@
     "currency": "USD",
     "report_url": "https://debjitmukherjee1.github.io/assets/files/eli-lilly-research-report.pdf",
     "status": "open"
+  },
+  {
+    "company": "ExxonMobil",
+    "ticker": "XOM",
+    "yahoo_symbol": "XOM",
+    "market": "US",
+    "benchmark": "S&P 500",
+    "call_date": "2026-11-10",
+    "rating": "REDUCE",
+    "price_at_call": 164.47,
+    "target": 154,
+    "currency": "USD",
+    "report_url": "https://debjitmukherjee1.github.io/assets/files/exxonmobil-research-report.pdf",
+    "status": "open"
   }
 ]
