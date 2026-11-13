@@ -20,8 +20,13 @@ open call on the same ticker came after it (its revision). If a live fetch fails
 for a given symbol, that call's previous committed figures are kept and marked
 stale rather than silently overwritten with fabricated numbers.
 
+Only calls that publish.is_publishable() allows are enriched and written:
+Indian-market calls stay off the site until they are 365 days old. calls.json
+(the input) keeps every call; closed-call successors are still resolved
+against the complete input.
+
 Writes:
-  site/data/calls.json     -> every call, enriched
+  site/data/calls.json     -> every publishable call, enriched
   site/data/summary.json   -> total calls, hit rate (closed), average alpha, best/worst
 
 Usage:  python run_all.py                 (mock, offline)
@@ -34,6 +39,7 @@ from datetime import date, datetime, timezone
 import config
 import fetch_events
 import fetch_prices
+import publish
 
 # Rough index levels so mock benchmark series look plausible.
 MOCK_ANCHOR = {
@@ -177,13 +183,16 @@ def main():
     updated = datetime.now(timezone.utc).strftime("%d %b %Y %H:%M UTC")
 
     calls = config.load_calls()
+    public_calls = publish.publishable(calls, today)
+    print(f"  {len(public_calls)} of {len(calls)} calls publishable today "
+          f"(India calls younger than {publish.INDIA_EMBARGO_DAYS} days withheld)")
     manual_events = config.load_manual_events()
     # Resolved once per unique ticker (not per call row) -- a company only
     # has one next-earnings date regardless of how many calls reference it,
     # and this keeps a flaky Yahoo/crumb hiccup from being retried per row.
     earnings_by_symbol = {
         sym: resolve_next_earnings(sym, manual_events, today)
-        for sym in {c["yahoo_symbol"] for c in calls}
+        for sym in {c["yahoo_symbol"] for c in public_calls}
     }
 
     prev_path = os.path.join(config.DATA_DIR, "calls.json")
@@ -193,7 +202,7 @@ def main():
             prev_by_key = {_key(c): c for c in json.load(f).get("calls", [])}
 
     enriched_calls = []
-    for call in calls:
+    for call in public_calls:
         try:
             enriched_calls.append(enrich(call, calls, today, earnings_by_symbol))
         except Exception as e:
@@ -220,41 +229,17 @@ def main():
             else:
                 raise
 
+    for c in enriched_calls:
+        add_direction(c)
+    # Re-check at write time: nothing withheld may reach site/data, even via
+    # the stale-fallback path above.
+    enriched_calls = publish.publishable(enriched_calls, today)
+
     os.makedirs(config.DATA_DIR, exist_ok=True)
     with open(prev_path, "w") as f:
         json.dump({"updated_at": updated, "calls": enriched_calls}, f, indent=2)
 
-    for c in enriched_calls:
-        add_direction(c)
-    with open(prev_path, "w") as f:
-        json.dump({"updated_at": updated, "calls": enriched_calls}, f, indent=2)
-
-    closed = [c for c in enriched_calls if c["status"] == "closed" and c["hit"] is not None]
-    hit_rate = round(100 * sum(1 for c in closed if c["hit"]) / len(closed), 1) if closed else None
-    # Deprecated: raw alpha averaged over every call, blind to the call's direction.
-    avg_alpha = round(sum(c["alpha"] for c in enriched_calls) / len(enriched_calls), 2) if enriched_calls else 0
-    directional = [c for c in enriched_calls if c["direction"] != 0]
-    holds = [c for c in enriched_calls if c["direction"] == 0]
-    avg_signed = round(sum(c["signed_alpha"] for c in directional) / len(directional), 2) if directional else None
-    right = sum(1 for c in directional if c["signed_alpha"] > 0)
-    best = max(directional, key=lambda c: c["signed_alpha"]) if directional else None
-    worst = min(directional, key=lambda c: c["signed_alpha"]) if directional else None
-    hold_avg_abs = round(sum(abs(c["alpha"]) for c in holds) / len(holds), 2) if holds else None
-
-    summary = {
-        "updated_at": updated,
-        "total_calls": len(enriched_calls),
-        "closed_calls": len(closed),
-        "hit_rate_pct": hit_rate,
-        "average_alpha_pct": avg_alpha,
-        "directional_calls": len(directional),
-        "avg_signed_alpha_pct": avg_signed,
-        "directional_right": right,
-        "hold_calls": len(holds),
-        "hold_avg_abs_alpha_pct": hold_avg_abs,
-        "best_call": {"company": best["company"], "rating": best["rating"], "call_date": best["call_date"], "alpha": best["alpha"], "signed_alpha": best["signed_alpha"]} if best else None,
-        "worst_call": {"company": worst["company"], "rating": worst["rating"], "call_date": worst["call_date"], "alpha": worst["alpha"], "signed_alpha": worst["signed_alpha"]} if worst else None,
-    }
+    summary = publish.build_summary(enriched_calls, updated)
     with open(os.path.join(config.DATA_DIR, "summary.json"), "w") as f:
         json.dump(summary, f, indent=2)
 

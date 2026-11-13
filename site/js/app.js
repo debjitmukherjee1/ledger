@@ -14,7 +14,9 @@ async function boot() {
       fetch("data/calls.json").then(r => r.json()),
       fetch("data/summary.json").then(r => r.json()),
     ]);
-    state.calls = callsDoc.calls;
+    // The pipeline already withholds these; this is a second gate in case
+    // a stale data file is ever served.
+    state.calls = callsDoc.calls.filter(isPublishable);
     state.summary = summary;
     document.getElementById("updated-at").textContent = summary.updated_at || "—";
     renderSummary();
@@ -23,10 +25,25 @@ async function boot() {
   } catch (e) {
     console.error(e);
     document.getElementById("calls-tbody").innerHTML =
-      `<tr><td colspan="11" class="muted">Could not load data. If running locally, serve with <code>python -m http.server</code>.</td></tr>`;
+      `<tr><td colspan="12" class="muted">Could not load data. If running locally, serve with <code>python -m http.server</code>.</td></tr>`;
     const strip = document.getElementById("events-strip");
     if (strip) strip.innerHTML = "";
   }
+}
+
+// ---- publication rule -----------------------------------------------------
+// Indian-market calls are published only once they are 365 days old
+// (mirrors pipeline/publish.py and the portfolio site).
+const INDIA_EMBARGO_DAYS = 365;
+function isIndia(c) {
+  const sym = (c.yahoo_symbol || "").toUpperCase();
+  return c.market === "India" || c.currency === "INR" || sym.endsWith(".NS") || sym.endsWith(".BO");
+}
+function isPublishable(c) {
+  if (!isIndia(c)) return true;
+  const [y, m, d] = c.call_date.split("-").map(Number);
+  const ageDays = (Date.now() - Date.UTC(y, m - 1, d)) / 86400000;
+  return ageDays >= INDIA_EMBARGO_DAYS;
 }
 
 // ---- helpers ------------------------------------------------------------
@@ -89,7 +106,10 @@ function renderTable() {
   const rows = filteredCalls();
   const tbody = document.getElementById("calls-tbody");
   if (!rows.length) {
-    tbody.innerHTML = `<tr><td colspan="11" class="muted">No calls match this filter.</td></tr>`;
+    const msg = state.marketFilter === "India"
+      ? "Indian-market calls are published here 12 months after their call date. None have reached that point yet."
+      : "No calls match this filter.";
+    tbody.innerHTML = `<tr><td colspan="12" class="muted empty-row">${msg}</td></tr>`;
     return;
   }
   tbody.innerHTML = rows.map(c => {
