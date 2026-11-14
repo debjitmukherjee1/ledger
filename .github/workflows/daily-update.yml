@@ -59,6 +59,16 @@ jobs:
           cd pipeline
           python run_all.py
 
+      # Publication gate, run on every refresh even if the pipeline step
+      # failed: Indian-market calls stay off the site until they are 365
+      # days old (pipeline/calls.json keeps them). run_all.py already
+      # filters; this re-filters whatever is in site/data so nothing
+      # withheld can ship, and recomputes summary.json from what remains.
+      - name: Apply India 365-day publication filter
+        run: |
+          cd pipeline
+          python publish.py
+
       - name: Commit refreshed data
         run: |
           git config user.name "ledger-bot"

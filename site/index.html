@@ -21,7 +21,11 @@
   <meta name="twitter:title" content="Ledger — A Public Track Record" />
   <meta name="twitter:description" content="Every research call I've published, tracked daily against its live price and benchmark. Honesty is the product." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300..500&family=Geist:wght@300..600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/suite.css" />
 </head>
 <body>
   <header class="topbar">
@@ -53,8 +57,9 @@
       <h2>Track Record</h2>
       <hr class="rule" />
       <p class="muted">Every rating tracked daily against its live price and benchmark — Nifty 50 for India names, S&amp;P 500 for US names. Losers are shown as prominently as winners. That's the point.</p>
+      <p class="muted small">Indian-market calls are published here 12 months after their call date.</p>
 
-      <p class="disclaimer">⚠ Personal, educational research tool. Not investment advice, not a solicitation, and I am not a SEBI-registered investment adviser. Returns shown are <strong>price returns only</strong> — dividends are excluded (dividend-agnostic) — and reflect an unofficial, once-daily data source. Nothing here should be the basis for a trading decision.</p>
+      <p class="disclaimer">Personal, educational research tool. Not investment advice, not a solicitation, and I am not a SEBI-registered investment adviser. Returns shown are <strong>price returns only</strong> — dividends are excluded (dividend-agnostic) — and reflect an unofficial, once-daily data source. Nothing here should be the basis for a trading decision.</p>
 
       <div class="stat-row" id="summary-stats"></div>
 
@@ -114,8 +119,9 @@
         <li><strong>Distance to target</strong> — <code>(target / live_price − 1) × 100</code>. Positive means the target is still above the live price; negative means the live price has moved past it.</li>
         <li><strong>Hit / miss (closed calls only)</strong> — a call closes when a later report revises it (e.g. a HOLD later revised to ACCUMULATE). Its window runs from its own call date to the date of the revision, using the revision's price as the closing price. It's marked a <strong>hit</strong> if the price ever crossed the target during that window (reached it on the way up for an upside thesis, or fell to it for a downside/fair-value thesis) — otherwise a <strong>miss</strong>.</li>
       </ol>
+      <p class="muted small"><strong>Publication delay for India.</strong> Calls on Indian-market names appear on Ledger only once they are 12 months old. Every call is still recorded on the day it is made; the delay applies to publication, and the track record is computed only from what is published.</p>
       <p class="muted small">Where a call was revised, both the closed original and the open revision are kept — nothing is deleted from the record. The summary header's hit rate is computed over closed calls; call alpha and best/worst over every BUY/ACCUMULATE/REDUCE row, open and closed alike.</p>
-      <p class="disclaimer">⚠ Personal, educational research tool. Prices refresh once daily from an unofficial free endpoint, not in real time. Past calls are not a guarantee of future ones. <strong>Not investment advice, not a solicitation, not SEBI-registered research.</strong></p>
+      <p class="disclaimer">Personal, educational research tool. Prices refresh once daily from an unofficial free endpoint, not in real time. Past calls are not a guarantee of future ones. <strong>Not investment advice, not a solicitation, not SEBI-registered research.</strong></p>
     </section>
   </main>
 
@@ -130,5 +136,6 @@
   </footer>
 
   <script src="js/app.js"></script>
+  <script src="js/suite.js"></script>
 </body>
 </html>
