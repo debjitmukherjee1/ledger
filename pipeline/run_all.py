@@ -21,8 +21,8 @@ for a given symbol, that call's previous committed figures are kept and marked
 stale rather than silently overwritten with fabricated numbers.
 
 Only calls that publish.is_publishable() allows are enriched and written:
-Indian-market calls stay off the site until they are 365 days old. calls.json
-(the input) keeps every call; closed-call successors are still resolved
+Indian-market calls stay off the site until they are 365 days old. The input
+(calls.json plus the decrypted calls.india.json) keeps every call; closed-call successors are still resolved
 against the complete input.
 
 Writes:

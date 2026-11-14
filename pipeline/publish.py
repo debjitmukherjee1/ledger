@@ -2,7 +2,7 @@
 publish.py — what Ledger is allowed to publish.
 
 Indian-market research calls stay private for 12 months after their call date
-(reduces SEBI research-analyst exposure). pipeline/calls.json keeps every call;
+(reduces SEBI research-analyst exposure). pipeline/calls.json holds the US calls and calls.india.json.enc (encrypted) the Indian ones;
 this module is the single gate between that complete input and the public
 output in site/data. The portfolio site applies the same 365-day rule.
 

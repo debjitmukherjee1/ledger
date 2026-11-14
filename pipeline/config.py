@@ -29,9 +29,19 @@ DATA_DIR = os.path.join(BASE_DIR, "..", "site", "data")
 MOCK_MODE = os.environ.get("LEDGER_LIVE") != "1"
 
 
+# Indian-market calls are kept encrypted (calls.india.json.enc). The daily workflow
+# decrypts them to this git-ignored file with the INDIA_VAULT_KEY secret; publish.py
+# still keeps each one off the site until it is 365 days old.
+INDIA_CALLS_FILE = os.path.join(BASE_DIR, "calls.india.json")
+
+
 def load_calls():
     with open(CALLS_FILE) as f:
-        return json.load(f)
+        calls = json.load(f)
+    if os.path.exists(INDIA_CALLS_FILE):
+        with open(INDIA_CALLS_FILE) as f:
+            calls += json.load(f)
+    return calls
 
 
 def load_manual_events():

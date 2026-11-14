@@ -44,6 +44,23 @@ jobs:
       - name: Install deps
         run: pip install -r pipeline/requirements.txt
 
+      # Indian calls are stored encrypted (pipeline/calls.india.json.enc). Unlock them
+      # for this run only; the plain file is git-ignored and only site/data is committed.
+      # Without the secret the run carries on with the public calls alone.
+      - name: Unlock Indian calls
+        env:
+          INDIA_VAULT_KEY: ${{ secrets.INDIA_VAULT_KEY }}
+        run: |
+          if [ -z "$INDIA_VAULT_KEY" ]; then
+            echo "::warning::INDIA_VAULT_KEY secret is missing; Indian calls skipped this run"
+            exit 0
+          fi
+          printf '%s' "$INDIA_VAULT_KEY" > "$RUNNER_TEMP/key"
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -md sha256 \
+            -in pipeline/calls.india.json.enc -out pipeline/calls.india.json -pass file:"$RUNNER_TEMP/key"
+          rm -f "$RUNNER_TEMP/key"
+          python -c "import json; print(len(json.load(open('pipeline/calls.india.json'))), 'Indian calls unlocked')"
+
       - name: Run pipeline
         # If one call genuinely errors (not an external-API hiccup -- those
         # already degrade to the previous committed data inside the pipeline
@@ -61,7 +78,7 @@ jobs:
 
       # Publication gate, run on every refresh even if the pipeline step
       # failed: Indian-market calls stay off the site until they are 365
-      # days old (pipeline/calls.json keeps them). run_all.py already
+      # days old (they are kept encrypted in pipeline/calls.india.json.enc). run_all.py already
       # filters; this re-filters whatever is in site/data so nothing
       # withheld can ship, and recomputes summary.json from what remains.
       - name: Apply India 365-day publication filter

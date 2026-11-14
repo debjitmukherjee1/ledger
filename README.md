@@ -48,7 +48,11 @@ python -m http.server 8000
 3. `daily-update.yml` refreshes every morning (runs with `LEDGER_LIVE=1`).
 
 ## Adding a new call
-Every time a new rating publishes, add one entry to `pipeline/calls.json`:
+Every time a new rating publishes, add one entry to `pipeline/calls.json` (US calls).
+Indian calls are not kept in plain text here: add them to the private list outside the repo,
+then run `sh pipeline/seal_india.sh <ledger-india-calls.json> <vault key>` and commit
+`pipeline/calls.india.json.enc`. The daily job decrypts it with the `INDIA_VAULT_KEY` secret,
+and each Indian call appears on the site once it is 365 days old. Entry format:
 
 ```json
 {
