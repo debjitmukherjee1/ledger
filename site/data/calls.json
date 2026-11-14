@@ -1,5 +1,5 @@
 {
-  "updated_at": "14 Nov 2026 04:42 UTC",
+  "updated_at": "14 Nov 2026 12:23 UTC",
   "calls": [
     {
       "company": "Amazon",
@@ -2615,7 +2615,11 @@
         }
       ],
       "source": "live",
-      "next_earnings": null,
+      "next_earnings": {
+        "date": "2026-11-17",
+        "source": "Yahoo",
+        "as_of": "2026-11-14"
+      },
       "direction": -1,
       "signed_alpha": 26.38
     },
@@ -3428,11 +3432,7 @@
         }
       ],
       "source": "live",
-      "next_earnings": {
-        "date": "2026-12-10",
-        "source": "Yahoo",
-        "as_of": "2026-11-14"
-      },
+      "next_earnings": null,
       "direction": 0,
       "signed_alpha": 0.0
     },
