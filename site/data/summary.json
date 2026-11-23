@@ -1,27 +1,27 @@
 {
-  "updated_at": "22 Nov 2026 13:30 UTC",
+  "updated_at": "23 Nov 2026 16:18 UTC",
   "total_calls": 15,
   "closed_calls": 3,
   "hit_rate_pct": 33.3,
-  "average_alpha_pct": 5.26,
+  "average_alpha_pct": 4.99,
   "directional_calls": 8,
-  "avg_signed_alpha_pct": 6.77,
-  "directional_right": 5,
+  "avg_signed_alpha_pct": 6.32,
+  "directional_right": 6,
   "hold_calls": 7,
-  "hold_avg_abs_alpha_pct": 16.28,
+  "hold_avg_abs_alpha_pct": 15.23,
   "india_embargo_days": 365,
   "best_call": {
     "company": "NVIDIA",
     "rating": "REDUCE",
     "call_date": "2026-08-27",
-    "alpha": -34.33,
-    "signed_alpha": 34.33
+    "alpha": -21.19,
+    "signed_alpha": 21.19
   },
   "worst_call": {
-    "company": "ExxonMobil",
+    "company": "Eli Lilly",
     "rating": "REDUCE",
-    "call_date": "2026-11-10",
-    "alpha": 5.4,
-    "signed_alpha": -5.4
+    "call_date": "2026-10-30",
+    "alpha": 1.56,
+    "signed_alpha": -1.56
   }
 }
