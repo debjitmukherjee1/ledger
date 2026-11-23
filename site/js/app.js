@@ -1,3 +1,7 @@
+// Escape every string written into HTML; only http(s) links allowed
+// (red-team finding, 23-Nov-2026).
+function escL(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+function safeUrlL(u) { return /^https?:\/\//i.test(String(u || "")) ? escL(u) : "#"; }
 /* Ledger — 100% static. Reads pre-computed JSON; no API keys, no live server. */
 
 const state = {
@@ -122,13 +126,13 @@ function renderTable() {
     const hitBadge = c.status === "closed" && c.hit != null
       ? ` <span class="small ${c.hit ? "pos" : "neg"}">${c.hit ? "hit" : "miss"}</span>` : "";
     return `
-      <tr data-ticker="${c.ticker}">
+      <tr data-ticker="${escL(c.ticker)}">
         <td class="company-cell">
-          <div class="company-name">${c.company}</div>
-          <div class="company-sub">${c.ticker} · ${c.market}${c.report_url ? ` · <a href="${c.report_url}" target="_blank" rel="noopener">note</a>` : ""}</div>
+          <div class="company-name">${escL(c.company)}</div>
+          <div class="company-sub">${escL(c.ticker)} · ${escL(c.market)}${c.report_url ? ` · <a href="${safeUrlL(c.report_url)}" target="_blank" rel="noopener">note</a>` : ""}</div>
         </td>
-        <td><span class="rating-badge ${ratingClass(c.rating)}">${c.rating}</span></td>
-        <td class="num">${c.call_date}</td>
+        <td><span class="rating-badge ${ratingClass(c.rating)}">${escL(c.rating)}</span></td>
+        <td class="num">${escL(c.call_date)}</td>
         <td class="num">${fmtPrice(c.price_at_call, c.currency)}</td>
         <td class="num">${targetCell}</td>
         <td class="num">${fmtPrice(c.live_price, c.currency)}</td>
